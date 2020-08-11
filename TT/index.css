@@ -1,0 +1,77 @@
+header{
+			text-align: center;
+			border:5px solid #0CC6A3;
+			height: 125px;
+		}
+		table,th,td{
+			border: 1px solid #0CC6A3;
+			text-align: center;
+			padding: 24px;
+			width: 30%;
+		}
+		table{
+			font-size: 30px;
+			color: #FFA500;
+			margin: 0 auto;
+		}
+		caption{
+			font-size: 30px;
+		}
+		body{
+			color: white;
+			background-image: url('corona.jpg');
+			height: 100%;
+		}
+		#pstt{
+			background-image: url('2.webp'); 
+		}
+		#monthu{
+			background-image: url('2.webp');
+		}
+		.active{
+			color: #0000FF;
+			background-color: rgba(256,0,0,0.3);
+		}
+		.mon{
+			color: #17F70F;
+			margin-top: 50px;
+		}
+		.mon caption{
+			color: yellow;
+		}
+		.index p{
+			margin: 0 auto;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: 17px;
+		}
+		.own ul{
+			font-size: 20px;
+		}
+		.last{
+			font-size: 24px;
+		}
+		.foot{
+			background-color: rgba(255,255,255,0.3);
+			margin:10px auto;
+			text-align: center;
+			padding: 0px 30px;
+			float: center;
+			font-size: 18px;
+		}
+		summary{
+			font-size: 25px;
+		}
+		nav a{
+			text-decoration: none;
+			padding: 10px;
+			font-size: 20px;
+			color: #FF0000;
+			background-color: rgba(255,255,255,0.3);
+			border-radius: 10px;
+			margin: 10px;
+		}
+		nav a:hover,nav a:focus{
+			color: #FF00FF;
+			background-color: rgba(0,255,200,0.3);
+		}
