@@ -21,7 +21,9 @@ header{
 			color: white;
 			background-image: url('corona.jpg');
 			height: 100%;
+			width:100%;
 			background-size:cover;
+			background-repeat:no-repeat;
 		}
 		#pstt{
 			background-image: url('2.webp'); 
