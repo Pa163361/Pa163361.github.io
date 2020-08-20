@@ -1,6 +1,6 @@
 var ind=0;
 var count=3;
-var arr=["https://images.unsplash.com/photo-1576707948881-b485713fbad7?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80","https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" , "https://images.unsplash.com/photo-1580019542155-247062e19ce4?ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80","https://images.wallpapersden.com/image/download/kajal-agarwal-cute-pose_41889_1920x1080.jpg"];
+var arr=["https://images.unsplash.com/photo-1576707948881-b485713fbad7?ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80","https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" , "https://images.unsplash.com/photo-1580019542155-247062e19ce4?ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80","https://cutewallpaper.org/21/tropical-fish-backgrounds/Tropical-Fish-Backgrounds-Wallpaper-1920x1080.jpg"];
 var i=0;
 var arr2=document.getElementsByTagName('p');
 var variable;
