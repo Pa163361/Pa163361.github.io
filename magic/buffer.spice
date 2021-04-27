@@ -1,0 +1,48 @@
+* SPICE3 file created from buffer.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+Vin INP gnd 0
+
+M1000 Inv_out out_1 vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=80 ps=52
+M1001 Inv_out out_1 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=40 ps=36
+M1002 out_1 INP vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1003 out_1 INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+C0 out_1 gnd 0.1fF
+C1 out_1 vdd 0.1fF
+C2 gnd INP 0.0fF
+C3 out_1 INP 0.1fF
+C4 Inv_out gnd 0.0fF
+C5 out_1 Inv_out 0.1fF
+C6 vdd Inv_out 0.1fF
+C7 out_1 vdd 0.1fF
+C8 vdd vdd 0.1fF
+C9 INP vdd 0.1fF
+C10 Inv_out vdd 0.0fF
+C11 INP gnd 0.2fF
+C12 gnd gnd 0.2fF
+C13 Inv_out gnd 0.1fF
+C14 vdd gnd 0.2fF
+C15 out_1 gnd 0.3fF
+C16 vdd gnd 1.0fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(Inv_out)
+
+.endc
+
+.end

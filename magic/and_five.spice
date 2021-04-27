@@ -1,0 +1,66 @@
+* SPICE3 file created from and_five.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vol vdd gnd 'SUPPLY'
+
+Vin_a A gnd pulse 0 1.8 0ps 1ps 1ps 10ns 20ns
+Vin_b B gnd pulse 0 1.8 0ps 1ps 1ps 20ns 40ns
+Vin_c C gnd pulse 0 1.8 0ps 1ps 1ps 40ns 80ns
+Vin_d D gnd pulse 0 1.8 0ps 1ps 1ps 80ns 160ns
+Vin_e E gnd pulse 0 1.8 0ps 1ps 1ps 160ns 320ns
+
+M1000 and_five_output nand_five_output vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=176 ps=108
+M1001 and_five_output nand_five_output gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=40 ps=36
+M1002 nand_five_output A vdd vdd CMOSP w=8 l=2
++  ad=136 pd=82 as=0 ps=0
+M1003 vdd B nand_five_output vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 nand_five_output C vdd vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 vdd D nand_five_output vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 nand_five_output E vdd vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1007 a_93_8# A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1008 a_101_8# B a_93_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1009 a_109_8# C a_101_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1010 a_117_8# D a_109_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1011 nand_five_output E a_117_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+
+C0 and_five_output gnd 0.0fF
+C1 vdd nand_five_output 0.2fF
+C2 vdd vdd 0.2fF
+C3 nand_five_output vdd 0.6fF
+C4 vdd and_five_output 0.0fF
+C5 nand_five_output and_five_output 0.1fF
+C6 nand_five_output gnd 0.1fF
+C7 vdd and_five_output 0.1fF
+C8 gnd gnd 0.3fF
+C9 and_five_output gnd 0.1fF
+C10 vdd gnd 0.2fF
+C11 nand_five_output gnd 1.0fF
+C12 vdd gnd 2.0fF
+
+.tran 0.1n 350n
+
+.control
+
+run
+
+plot v(A) v(B) v(C) v(E) v(D)
+plot v(and_five_output)
+
+.endc
+
+.end

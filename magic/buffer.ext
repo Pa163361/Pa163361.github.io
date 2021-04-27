@@ -1,0 +1,12 @@
+timestamp 1618814130
+version 8.0
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use inverter inverter_0 1 0 0 0 1 34
+use inverter inverter_1 1 0 24 0 1 34
+merge "inverter_1/INP" "inverter_0/Inv_out" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/w_0_0#" "inverter_0/w_0_0#" 0 0 0 0 0 0 -40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/vdd" "inverter_0/vdd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_1/gnd" "inverter_0/gnd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0

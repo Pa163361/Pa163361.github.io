@@ -1,0 +1,539 @@
+timestamp 1619470621
+version 8.0
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use and_gate and_gate_0 1 0 2 0 -1 11
+use or_five or_five_0 1 0 6 0 -1 45
+use xor_gate xor_gate_0 1 0 1 0 1 -79
+use and_gate and_gate_7 1 0 171 0 1 -45
+use and_three and_three_2 1 0 209 0 1 -79
+use and_four and_four_1 1 0 312 0 1 -79
+use and_five and_five_0 1 0 448 0 1 -79
+use xor_gate xor_gate_7 1 0 676 0 1 -79
+use and_gate and_gate_1 1 0 2 0 -1 -113
+use or_four or_four_0 1 0 -1 0 -1 -79
+use xor_gate xor_gate_1 1 0 1 0 1 -203
+use and_gate and_gate_6 1 0 168 0 1 -169
+use and_three and_three_1 1 0 202 0 1 -203
+use and_four and_four_0 1 0 309 0 1 -203
+use xor_gate xor_gate_6 1 0 676 0 1 -203
+use and_gate and_gate_2 1 0 2 0 -1 -237
+use or_three or_three_0 1 0 -16 0 -1 -203
+use xor_gate xor_gate_2 1 0 1 0 1 -327
+use and_gate and_gate_5 1 0 168 0 1 -293
+use and_three and_three_0 1 0 182 0 1 -327
+use xor_gate xor_gate_5 1 0 676 0 1 -327
+use and_gate and_gate_3 1 0 2 0 -1 -361
+use or_gate or_gate_0 1 0 4 0 -1 -327
+use xor_gate xor_gate_3 1 0 1 0 1 -451
+use and_gate and_gate_4 1 0 168 0 1 -417
+use xor_gate xor_gate_4 1 0 674 0 1 -451
+node "S0" 3 573.311 813 -427 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 692 354 0 0 0 0 0 0 0 0 0 0
+node "m1_82_n360#" 5 2374.97 82 -360 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 884 440 0 0 0 0 0 0 0 0
+node "A0" 3 1253.12 0 -359 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 28 487 248 0 0 0 0 0 0 0 0
+node "B0" 2 364.184 -8 -427 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 436 226 0 0 0 0 0 0 0 0 0 0
+node "S1" 3 566.776 815 -303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 684 350 0 0 0 0 0 0 0 0 0 0
+node "carry_1" 17 2861.79 129 -355 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3142 1586 138 76 0 0 0 0 0 0 0 0
+node "P1_G0" 4 1356.32 93 -246 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69 48 762 388 0 0 0 0 0 0 0 0
+node "P0_P1_C0" 6 2157.23 105 -234 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 1142 578 0 0 0 0 0 0 0 0
+node "A1" 2 1208.9 0 -235 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 28 471 240 0 0 0 0 0 0 0 0
+node "B1" 2 364.184 -8 -303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 436 226 0 0 0 0 0 0 0 0 0 0
+node "S2" 3 566.776 815 -179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 684 350 0 0 0 0 0 0 0 0 0 0
+node "carry_2" 17 2651.71 143 -231 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3002 1516 50 40 234 124 0 0 0 0 0 0
+node "m1_99_n122#" 4 2040.53 99 -122 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 746 380 0 0 0 0 0 0 0 0
+node "m1_118_n107#" 10 4682.22 118 -107 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 1700 864 98 56 0 0 0 0 0 0
+node "P2_P1-G0" 7 3665.71 108 -107 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 1350 682 0 0 0 0 0 0 0 0
+node "A2" 2 1164.68 0 -111 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 28 455 232 0 0 0 0 0 0 0 0
+node "B2" 2 364.184 -8 -179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 436 226 0 0 0 0 0 0 0 0 0 0
+node "S3" 3 566.776 815 -55 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 684 350 0 0 0 0 0 0 0 0 0 0
+node "carry_3" 16 2959.2 158 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2962 1496 234 124 0 0 0 0 0 0 0 0
+node "carry_0" 39 17281.6 181 -433 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1329 702 6417 3214 0 0 0 0 0 0 0 0
+node "P0" 34 11247.6 137 -427 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 253 158 4118 2092 2123 1082 0 0 0 0 0 0
+node "G0" 21 8640.18 58 -355 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172 116 3276 1662 415 236 0 0 0 0 0 0
+node "P1" 35 7585.11 140 -303 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 542 304 2803 1472 3245 1656 0 0 0 0 0 0
+node "m1_58_n231#" 11 3247.56 58 -231 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 196 120 1342 684 626 320 0 0 0 0 0 0
+node "m1_58_n107#" 5 819.633 58 -107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194 112 682 348 0 0 0 0 0 0 0 0
+node "m1_140_n179#" 27 7706.62 140 -179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 302 196 3005 1550 1635 852 0 0 0 0 0 0
+node "m1_140_n55#" 20 8391.03 140 -55 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263 160 3099 1584 475 258 0 0 0 0 0 0
+node "m1_1_n393#" 43 15125.7 1 -393 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25484 6582 160 104 1552 776 0 0 0 0 0 0
+node "m1_106_1#" 4 1999.58 106 1 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 58 44 730 372 0 0 0 0 0 0 0 0
+node "m1_135_6#" 12 5180.32 135 6 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 2246 1130 0 0 0 0 0 0 0 0
+node "m1_115_6#" 6 3245.59 115 6 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 1182 598 0 0 0 0 0 0 0 0
+node "m1_125_11#" 9 3260.17 125 11 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54 42 1726 870 0 0 0 0 0 0 0 0
+node "carry_4" 14 2305.14 173 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2812 1414 0 0 0 0 0 0 0 0 0 0
+node "m1_58_17#" 1 161.593 58 17 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188 102 0 0 0 0 0 0 0 0 0 0
+node "A3" 2 1164.68 0 13 v1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 41 28 455 232 0 0 0 0 0 0 0 0
+node "B3" 2 364.184 -8 -55 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 436 226 0 0 0 0 0 0 0 0 0 0
+node "m1_n29_n451#" 56 17197.6 -29 -451 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26832 8704 0 0 0 0 0 0 0 0 0 0
+node "w_140_n417#" 18580 20.088 140 -417 nw 0 0 0 0 20 42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_n29_n451#" "m1_58_n231#" 450.725
+cap "P1" "carry_0" 222.134
+cap "G0" "carry_0" 174.19
+cap "P1" "m1_1_n393#" 328.503
+cap "G0" "m1_1_n393#" 261.101
+cap "m1_140_n179#" "m1_118_n107#" 235.184
+cap "P0_P1_C0" "m1_1_n393#" 130.55
+cap "carry_2" "P0" 170.87
+cap "P1_G0" "m1_1_n393#" 1508.19
+cap "m1_n29_n451#" "m1_58_n107#" 1269.71
+cap "carry_3" "m1_118_n107#" 85.4352
+cap "m1_140_n179#" "P0" 74.0448
+cap "m1_118_n107#" "m1_58_n231#" 74.0448
+cap "carry_1" "P1" 29.5303
+cap "P2_P1-G0" "m1_1_n393#" 130.55
+cap "m1_99_n122#" "m1_1_n393#" 130.55
+cap "carry_3" "P0" 85.4352
+cap "m1_82_n360#" "P0" 294.25
+cap "carry_2" "carry_0" 170.87
+cap "m1_125_11#" "m1_1_n393#" 1758.41
+cap "m1_1_n393#" "m1_115_6#" 130.55
+cap "carry_2" "m1_1_n393#" 53.6544
+cap "m1_n29_n451#" "P0" 652.752
+cap "m1_140_n179#" "carry_0" 74.0448
+cap "m1_140_n179#" "m1_1_n393#" 2253.97
+cap "B0" "m1_1_n393#" 65.9808
+cap "carry_3" "carry_0" 85.4352
+cap "carry_3" "m1_1_n393#" 53.6544
+cap "m1_1_n393#" "m1_58_n231#" 1096.43
+cap "m1_82_n360#" "m1_1_n393#" 130.55
+cap "m1_n29_n451#" "carry_0" 1968.36
+cap "m1_n29_n451#" "m1_1_n393#" 244.166
+cap "B3" "A3" 229.768
+cap "m1_135_6#" "m1_1_n393#" 1197.24
+cap "m1_106_1#" "m1_115_6#" 399.643
+cap "m1_n29_n451#" "carry_1" 164.915
+cap "B3" "m1_1_n393#" 65.9808
+cap "m1_125_11#" "m1_140_n55#" 546.455
+cap "m1_140_n55#" "m1_115_6#" 358.361
+cap "m1_118_n107#" "m1_1_n393#" 130.55
+cap "P0" "carry_0" 957.201
+cap "m1_140_n55#" "m1_140_n179#" 108.576
+cap "m1_1_n393#" "P0" 342.49
+cap "B2" "A2" 229.768
+cap "G0" "P1" 482.367
+cap "A3" "m1_1_n393#" 130.55
+cap "P0_P1_C0" "P1" 131.465
+cap "A0" "B0" 229.768
+cap "P0_P1_C0" "G0" 124.505
+cap "A2" "m1_1_n393#" 130.55
+cap "P1_G0" "P1" 141.905
+cap "B2" "m1_1_n393#" 65.9808
+cap "carry_1" "P0" 170.87
+cap "m1_140_n55#" "m1_135_6#" 317.645
+cap "m1_1_n393#" "carry_0" 783.302
+cap "m1_140_n55#" "m1_58_n107#" 114.935
+cap "carry_2" "P1" 26.8272
+cap "carry_2" "G0" 26.8272
+cap "carry_2" "P0_P1_C0" 1889.05
+cap "carry_1" "carry_0" 256.306
+cap "P1" "m1_140_n179#" 616.428
+cap "carry_1" "m1_1_n393#" 53.6544
+cap "G0" "m1_140_n179#" 181.055
+cap "carry_3" "P1" 139.09
+cap "carry_3" "G0" 85.4352
+cap "m1_n29_n451#" "P1" 2423.51
+cap "m1_106_1#" "m1_1_n393#" 130.55
+cap "m1_n29_n451#" "G0" 652.752
+cap "A1" "m1_1_n393#" 130.55
+cap "m1_125_11#" "m1_115_6#" 351.028
+cap "P2_P1-G0" "m1_140_n179#" 251.794
+cap "m1_99_n122#" "m1_140_n179#" 7.45714
+cap "B1" "m1_1_n393#" 65.9808
+cap "carry_3" "P2_P1-G0" 85.4352
+cap "P2_P1-G0" "m1_58_n231#" 87.0948
+cap "m1_99_n122#" "m1_58_n231#" 84.4848
+cap "m1_140_n55#" "m1_1_n393#" 1116.98
+cap "A0" "m1_1_n393#" 130.55
+cap "P1" "m1_118_n107#" 161.14
+cap "G0" "m1_118_n107#" 315.81
+cap "m1_n29_n451#" "carry_2" 81.3888
+cap "carry_3" "m1_140_n179#" 192.744
+cap "m1_125_11#" "m1_135_6#" 926.811
+cap "P2_P1-G0" "m1_58_n107#" 164.43
+cap "P1" "P0" 722.609
+cap "m1_140_n179#" "m1_58_n231#" 524.567
+cap "G0" "P0" 174.19
+cap "m1_n29_n451#" "m1_140_n179#" 450.724
+cap "carry_3" "m1_58_n231#" 53.6544
+cap "P2_P1-G0" "m1_118_n107#" 536.276
+cap "B1" "A1" 229.768
+cap "m1_n29_n451#" "carry_3" 130.55
+cap "and_gate_3/w_0_0#" "and_gate_3/A" 25.8552
+cap "xor_gate_3/inverter_1/w_0_0#" "and_gate_3/A" 8.7723
+cap "and_gate_3/A" "and_gate_3/B" 0.944
+cap "and_gate_3/A" "and_gate_3/Out" 4.7952
+cap "or_gate_0/A" "or_gate_0/or_out" 2.2968
+cap "or_gate_0/A" "or_gate_0/vdd" 9.4779
+cap "or_gate_0/A" "or_gate_0/a_82_40#" 2.002
+cap "or_gate_0/A" "carry_1" 1.3528
+cap "or_gate_0/w_69_34#" "or_gate_0/A" 22.4694
+cap "and_gate_4/w_0_0#" "P0" 0.852
+cap "or_gate_0/B" "or_gate_0/A" 3.776
+cap "P0" "and_gate_4/w_0_0#" 8.946
+cap "P0" "and_gate_4/A" 0.568
+cap "P0" "and_gate_4/B" 0.568
+cap "P0" "and_gate_4/Out" 1.2316
+cap "P0" "and_gate_4/pm_s_l" 5.7582
+cap "and_gate_4/A" "and_gate_4/B" 0.944
+cap "P0" "and_gate_4/inverter_0/Inv_out" 0.5586
+cap "xor_gate_4/B" "xor_gate_4/A" 0.944
+cap "xor_gate_4/inverter_0/w_0_0#" "xor_gate_4/B" 7.3872
+cap "xor_gate_4/B" "xor_gate_4/inverter_0/vdd" 5.4112
+cap "xor_gate_4/inverter_1/w_0_0#" "xor_gate_4/B" 6.0021
+cap "xor_gate_4/B" "xor_gate_4/A_bar" 5.4112
+cap "A0" "B0" 4.212
+cap "xor_gate_2/inverter_1/w_0_0#" "xor_gate_2/B" 8.7723
+cap "P1_G0" "or_three_0/vdd" 1.1988
+cap "or_gate_0/B" "or_gate_0/A" 0.236
+cap "or_gate_0/B" "carry_1" 5.4112
+cap "or_gate_0/B" "xor_gate_2/inverter_2/gnd" 5.4112
+cap "P1_G0" "or_three_0/w_95_38#" 4.0014
+cap "and_gate_5/w_0_0#" "P1" 0.852
+cap "or_gate_0/B" "or_gate_0/or_out" 12.932
+cap "P1_G0" "and_three_0/A" 2.2344
+cap "and_gate_5/Out" "and_three_0/A" 3.2224
+cap "and_gate_5/pm_s_l" "and_three_0/A" 6.7032
+cap "P1" "and_gate_5/A" 0.568
+cap "P1_G0" "and_gate_5/w_0_0#" 6.156
+cap "P1" "and_gate_5/B" 0.994
+cap "P1" "and_three_0/A" 0.781
+cap "and_gate_5/A" "and_gate_5/B" 0.944
+cap "and_gate_5/A" "and_three_0/A" 0.568
+cap "P1" "and_gate_5/Gnd" 3.0366
+cap "and_gate_5/B" "and_three_0/A" 0.568
+cap "P1" "P1_G0" 0.5586
+cap "and_three_0/A" "and_gate_5/w_0_0#" 5.396
+cap "P1" "and_gate_5/Out" 2.941
+cap "and_three_0/a_83_8#" "P1" 0.21
+cap "and_gate_5/a_13_n26#" "P1" 0.63
+cap "and_three_0/a_83_8#" "and_three_0/B" 2.464
+cap "and_three_0/a_91_8#" "and_three_0/C" 0.616
+cap "P0_P1_C0" "and_three_0/w_70_38#" 6.156
+cap "and_three_0/gnd" "P1" 0.5586
+cap "and_three_0/B" "P1" 0.568
+cap "P0_P1_C0" "P1" 0.5586
+cap "and_three_0/gnd" "G0" 12.5874
+cap "P1" "and_three_0/a_91_8#" 0.525
+cap "and_three_0/NAND_three_out" "and_three_0/C" 0.616
+cap "and_three_0/NAND_three_out" "P1" 2.836
+cap "and_three_0/NAND_three_out" "G0" 4.7952
+cap "P1" "and_three_0/C" 0.142
+cap "and_three_0/vdd" "G0" 16.1838
+cap "and_three_0/w_70_38#" "G0" 5.8482
+cap "xor_gate_5/inverter_0/vdd" "xor_gate_5/B" 5.4112
+cap "xor_gate_5/B" "xor_gate_5/A" 0.944
+cap "xor_gate_5/B" "xor_gate_5/A_bar" 5.4112
+cap "xor_gate_5/B" "xor_gate_5/inverter_1/w_0_0#" 4.617
+cap "xor_gate_5/B" "xor_gate_5/inverter_0/w_0_0#" 7.3872
+cap "xor_gate_1/inverter_1/w_0_0#" "xor_gate_1/B" 3.6936
+cap "A1" "and_gate_2/Out" 4.7952
+cap "and_gate_2/w_0_0#" "A1" 25.8552
+cap "A1" "B1" 5.156
+cap "or_three_0/C" "or_three_0/A" 0.944
+cap "or_three_0/a_108_44#" "or_three_0/B" 4.928
+cap "or_three_0/NOR_three_out" "or_three_0/C" 13.5314
+cap "or_three_0/w_95_38#" "or_three_0/B" 14.9769
+cap "or_three_0/inverter_0/Inv_out" "or_three_0/C" 8.3916
+cap "or_three_0/B" "or_three_0/A" 0.944
+cap "or_three_0/A" "xor_gate_1/inverter_2/gnd" 14.8476
+cap "or_three_0/NOR_three_out" "or_three_0/A" 2.8596
+cap "or_three_0/vdd" "or_three_0/B" 1.1988
+cap "and_gate_6/B" "and_three_1/A" 0.568
+cap "and_gate_6/A" "and_three_1/A" 0.284
+cap "and_three_1/A" "and_gate_6/Out" 2.0244
+cap "and_gate_6/a_13_n26#" "and_three_1/A" 0.63
+cap "and_gate_6/B" "and_gate_6/A" 4.1665
+cap "and_gate_6/a_13_n26#" "and_gate_6/B" 1.848
+cap "and_gate_6/Gnd" "and_three_1/A" 3.8388
+cap "and_gate_6/w_0_0#" "and_gate_6/inverter_0/Inv_out" 2.7702
+cap "and_three_1/a_91_8#" "and_three_1/C" 1.232
+cap "and_three_1/B" "and_three_1/A" 5.265
+cap "and_three_1/w_70_38#" "P2_P1-G0" 2.7702
+cap "and_four_0/nand_three_out" "and_four_0/D" 1.8148
+cap "and_four_0/B" "and_four_0/w_80_38#" 0.3078
+cap "and_four_0/nand_three_out" "and_four_0/B" 6.8931
+cap "and_four_0/B" "and_four_0/a_93_8#" 2.464
+cap "and_four_0/C" "and_four_0/a_101_8#" 1.232
+cap "and_four_0/C" "and_four_0/B" 4.3796
+cap "xor_gate_6/inverter_1/w_0_0#" "xor_gate_6/B" 3.6936
+cap "A2" "and_gate_1/w_0_0#" 25.8552
+cap "A2" "and_gate_1/Out" 4.7952
+cap "A2" "xor_gate_1/inverter_1/w_0_0#" 5.0787
+cap "A2" "B2" 5.156
+cap "xor_gate_0/inverter_2/gnd" "or_four_0/C" 15.1639
+cap "xor_gate_0/inverter_2/gnd" "or_four_0/D" 1.3528
+cap "or_four_0/B" "or_four_0/C" 0.944
+cap "or_four_0/w_87_38#" "or_four_0/B" 27.8964
+cap "or_four_0/B" "or_four_0/D" 1.18
+cap "or_four_0/C" "or_four_0/D" 0.944
+cap "or_four_0/B" "or_four_0/inverter_0/INP" 5.7392
+cap "or_four_0/C" "or_four_0/inverter_0/INP" 9.3156
+cap "carry_3" "or_four_0/B" 5.2572
+cap "or_four_0/D" "or_four_0/inverter_0/INP" 11.1338
+cap "or_four_0/vdd" "or_four_0/B" 4.0584
+cap "carry_3" "or_four_0/D" 4.9492
+cap "and_gate_7/a_13_n26#" "m1_140_n55#" 3.696
+cap "and_gate_7/Out" "m1_140_n55#" 10.4424
+cap "and_gate_7/B" "and_gate_7/A" 0.5265
+cap "and_gate_7/B" "m1_140_n55#" 0.944
+cap "m1_140_n55#" "and_gate_7/A" 0.944
+cap "m1_99_n122#" "and_gate_6/w_0_0#" 3.3858
+cap "m1_140_n55#" "and_gate_7/Gnd" 10.2064
+cap "and_three_2/B" "and_three_2/a_83_8#" 2.464
+cap "and_three_2/a_91_8#" "and_three_2/C" 0.616
+cap "and_three_2/C" "and_three_2/NAND_three_out" 0.616
+cap "P2_P1-G0" "and_three_1/w_70_38#" 3.3858
+cap "and_four_1/C" "P1" 2.596
+cap "and_four_0/C" "P1" 1.416
+cap "and_four_0/w_80_38#" "P1" 3.3858
+cap "and_four_1/a_93_8#" "m1_140_n179#" 2.464
+cap "and_four_1/D" "G0" 3.068
+cap "and_four_1/nand_three_out" "G0" 1.8148
+cap "and_four_1/B" "m1_140_n179#" 1.416
+cap "and_four_1/a_101_8#" "P1" 1.232
+cap "and_four_0/nand_three_out" "P1" 6.6266
+cap "P0" "and_five_0/a_93_8#" 1.848
+cap "and_five_0/C" "P0" 0.944
+cap "and_five_0/C" "P1" 0.472
+cap "and_five_0/A" "P0" 0.944
+cap "and_five_0/B" "P0" 0.944
+cap "and_five_0/A" "P1" 1.888
+cap "and_five_0/B" "P1" 1.298
+cap "and_five_0/D" "P0" 3.304
+cap "P0" "and_five_0/a_109_8#" 1.848
+cap "P0" "and_four_1/inverter_0/gnd" 5.1032
+cap "and_five_0/a_117_8#" "P0" 1.232
+cap "P0" "and_five_0/a_101_8#" 1.848
+cap "and_five_0/inverter_0/INP" "carry_0" 4.2124
+cap "carry_0" "and_five_0/E" 0.944
+cap "xor_gate_6/inverter_0/w_0_0#" "xor_gate_6/B" 11.6964
+cap "xor_gate_6/B" "xor_gate_6/inverter_0/vdd" 4.7952
+cap "xor_gate_6/B" "xor_gate_6/inverter_0/INP" 0.472
+cap "xor_gate_6/inverter_1/w_0_0#" "xor_gate_6/B" 4.617
+cap "xor_gate_0/inverter_1/w_0_0#" "A3" 8.7723
+cap "A3" "and_gate_0/Out" 4.7952
+cap "and_gate_0/w_0_0#" "A3" 25.8552
+cap "B3" "A3" 5.156
+cap "xor_gate_0/inverter_2/Inv_out" "or_five_0/B" 11.7332
+cap "or_five_0/a_108_44#" "or_five_0/C" 4.928
+cap "xor_gate_0/inverter_2/Inv_out" "or_five_0/C" 0.944
+cap "or_five_0/vdd" "or_five_0/C" 5.4112
+cap "xor_gate_0/inverter_3/Inv_out" "or_five_0/B" 4.7952
+cap "xor_gate_0/inverter_3/Inv_out" "or_five_0/C" 5.4112
+cap "or_five_0/w_87_38#" "or_five_0/B" 12.8547
+cap "or_five_0/w_87_38#" "or_five_0/C" 8.3511
+cap "or_five_0/B" "xor_gate_0/inverter_2/w_0_0#" 19.6992
+cap "or_five_0/w_87_38#" "or_five_0/D" 5.2326
+cap "or_five_0/a_100_44#" "or_five_0/B" 4.928
+cap "or_five_0/a_116_44#" "or_five_0/D" 2.464
+cap "or_five_0/C" "xor_gate_0/inverter_2/w_0_0#" 11.0808
+cap "or_five_0/E" "or_five_0/nor_five_output" 3.6296
+cap "or_five_0/w_87_38#" "or_five_0/E" 4.3173
+cap "or_five_0/D" "xor_gate_0/inverter_2/w_0_0#" 4.3092
+cap "m1_115_6#" "or_five_0/inverter_0/vdd" 16.2336
+cap "m1_115_6#" "and_gate_7/inverter_0/Inv_out" 5.4112
+cap "and_gate_7/inverter_0/Inv_out" "and_gate_7/Out" 5.7392
+cap "m1_125_11#" "or_five_0/inverter_0/vdd" 14.3856
+cap "and_gate_7/B" "and_gate_7/A" 2.578
+cap "m1_115_6#" "and_gate_7/B" 0.944
+cap "m1_115_6#" "and_gate_7/w_0_0#" 14.7744
+cap "m1_115_6#" "and_gate_7/A" 0.944
+cap "and_gate_7/B" "and_gate_7/inverter_0/Inv_out" 0.944
+cap "m1_125_11#" "and_gate_7/w_0_0#" 13.5432
+cap "and_gate_7/w_0_0#" "and_gate_7/inverter_0/Inv_out" 26.163
+cap "m1_115_6#" "and_gate_7/Out" 6.9712
+cap "and_gate_7/A" "and_gate_7/inverter_0/Inv_out" 0.944
+cap "and_three_2/NAND_three_out" "and_three_2/inverter_0/Inv_out" 12.3824
+cap "and_three_2/inverter_0/Inv_out" "and_three_2/B" 0.944
+cap "and_three_2/A" "and_three_2/inverter_0/Inv_out" 0.944
+cap "and_three_2/B" "m1_140_n55#" 0.472
+cap "and_three_2/A" "m1_140_n55#" 0.472
+cap "and_three_2/C" "and_three_2/inverter_0/Inv_out" 0.944
+cap "and_three_2/C" "m1_140_n55#" 0.472
+cap "and_three_2/inverter_0/Inv_out" "and_three_2/w_70_38#" 14.7744
+cap "and_three_2/w_70_38#" "m1_140_n55#" 20.9304
+cap "and_three_2/inverter_0/Inv_out" "and_three_2/vdd" 16.8496
+cap "and_three_2/vdd" "m1_140_n55#" 14.3856
+cap "and_four_1/A" "and_four_1/C" 0.236
+cap "and_four_1/A" "and_four_1/vdd" 19.1808
+cap "and_four_1/w_80_38#" "and_four_1/A" 21.6999
+cap "and_four_1/B" "and_four_1/A" 0.236
+cap "and_four_1/D" "and_four_1/A" 0.236
+cap "and_five_0/B" "and_five_0/A" 0.944
+cap "xor_gate_7/B" "xor_gate_7/inverter_1/w_0_0#" 8.7723
+merge "and_five_0/D" "and_four_0/C" -2090.82 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6 -46 -545 -362 -228 -128 0 0 0 0 0 0
+merge "and_four_0/C" "and_three_0/B"
+merge "and_three_0/B" "xor_gate_4/B"
+merge "xor_gate_4/B" "and_gate_4/A"
+merge "and_gate_4/A" "xor_gate_3/inverter_3/Inv_out"
+merge "xor_gate_3/inverter_3/Inv_out" "P0"
+merge "and_gate_0/B" "xor_gate_0/inverter_0/INP" -18.5592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_0/inverter_0/INP" "B3"
+merge "xor_gate_6/inverter_3/Inv_out" "S2" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_7/inverter_2/vdd" "xor_gate_7/inverter_0/vdd" -7892.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7908 -5170 -40 -26 -408 -202 0 0 0 0 0 0
+merge "xor_gate_7/inverter_0/vdd" "and_five_0/inverter_0/vdd"
+merge "and_five_0/inverter_0/vdd" "and_five_0/vdd"
+merge "and_five_0/vdd" "and_four_1/inverter_0/vdd"
+merge "and_four_1/inverter_0/vdd" "and_four_1/vdd"
+merge "and_four_1/vdd" "and_three_2/vdd"
+merge "and_three_2/vdd" "or_five_0/inverter_0/vdd"
+merge "or_five_0/inverter_0/vdd" "and_gate_7/pm_s_l"
+merge "and_gate_7/pm_s_l" "xor_gate_0/inverter_2/vdd"
+merge "xor_gate_0/inverter_2/vdd" "or_five_0/vdd"
+merge "or_five_0/vdd" "xor_gate_0/inverter_0/vdd"
+merge "xor_gate_0/inverter_0/vdd" "and_gate_0/pm_s_l"
+merge "and_gate_0/pm_s_l" "xor_gate_6/inverter_2/vdd"
+merge "xor_gate_6/inverter_2/vdd" "xor_gate_6/inverter_0/vdd"
+merge "xor_gate_6/inverter_0/vdd" "and_four_0/vdd"
+merge "and_four_0/vdd" "and_three_1/vdd"
+merge "and_three_1/vdd" "and_gate_6/pm_s_l"
+merge "and_gate_6/pm_s_l" "xor_gate_1/inverter_2/vdd"
+merge "xor_gate_1/inverter_2/vdd" "or_four_0/vdd"
+merge "or_four_0/vdd" "xor_gate_1/inverter_0/vdd"
+merge "xor_gate_1/inverter_0/vdd" "and_gate_1/pm_s_l"
+merge "and_gate_1/pm_s_l" "and_gate_5/Vdd"
+merge "and_gate_5/Vdd" "and_gate_2/pm_s_l"
+merge "and_gate_2/pm_s_l" "xor_gate_5/inverter_2/vdd"
+merge "xor_gate_5/inverter_2/vdd" "xor_gate_5/inverter_0/vdd"
+merge "xor_gate_5/inverter_0/vdd" "and_three_0/vdd"
+merge "and_three_0/vdd" "and_gate_5/pm_s_l"
+merge "and_gate_5/pm_s_l" "xor_gate_2/inverter_2/vdd"
+merge "xor_gate_2/inverter_2/vdd" "xor_gate_2/inverter_0/vdd"
+merge "xor_gate_2/inverter_0/vdd" "or_three_0/vdd"
+merge "or_three_0/vdd" "and_gate_2/Vdd"
+merge "and_gate_2/Vdd" "xor_gate_4/inverter_2/vdd"
+merge "xor_gate_4/inverter_2/vdd" "xor_gate_4/inverter_0/vdd"
+merge "xor_gate_4/inverter_0/vdd" "and_gate_4/pm_s_l"
+merge "and_gate_4/pm_s_l" "xor_gate_3/inverter_2/vdd"
+merge "xor_gate_3/inverter_2/vdd" "xor_gate_3/inverter_0/vdd"
+merge "xor_gate_3/inverter_0/vdd" "or_gate_0/vdd"
+merge "or_gate_0/vdd" "and_gate_3/pm_s_l"
+merge "and_gate_3/pm_s_l" "m1_1_n393#"
+merge "and_gate_2/B" "xor_gate_2/inverter_0/INP" -18.5592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_2/inverter_0/INP" "B1"
+merge "and_five_0/C" "and_four_1/C" -5191.69 0 0 0 0 0 0 0 0 0 0 0 0 0 0 94 -56 -1678 -898 -1160 -628 0 0 0 0 0 0
+merge "and_four_1/C" "and_four_0/B"
+merge "and_four_0/B" "and_three_1/B"
+merge "and_three_1/B" "xor_gate_5/B"
+merge "xor_gate_5/B" "and_three_0/A"
+merge "and_three_0/A" "and_gate_5/A"
+merge "and_gate_5/A" "xor_gate_2/inverter_3/Inv_out"
+merge "xor_gate_2/inverter_3/Inv_out" "P1"
+merge "or_four_0/B" "and_gate_6/inverter_0/Inv_out" -1089.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -372 -186 0 0 0 0 0 0 0 0
+merge "and_gate_6/inverter_0/Inv_out" "m1_99_n122#"
+merge "and_five_0/E" "and_four_0/D" -2320.07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -567 -356 -203 -336 0 0 0 0 0 0 0 0
+merge "and_four_0/D" "and_three_0/C"
+merge "and_three_0/C" "xor_gate_4/A"
+merge "xor_gate_4/A" "xor_gate_4/inverter_0/INP"
+merge "xor_gate_4/inverter_0/INP" "and_gate_4/B"
+merge "and_gate_4/B" "carry_0"
+merge "and_gate_1/B" "xor_gate_1/inverter_0/INP" -18.5592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_1/inverter_0/INP" "B2"
+merge "and_gate_1/A" "xor_gate_1/B" -89.3283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 -8 0 0 0 0 0 0 0 0
+merge "xor_gate_1/B" "A2"
+merge "or_five_0/inverter_0/Inv_out" "carry_4" -5.4888 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 -8 0 0 0 0 0 0 0 0 0 0
+merge "or_five_0/inverter_0/gnd" "or_five_0/gnd" -6915.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7623 -4498 0 0 0 0 0 0 0 0 0 0
+merge "or_five_0/gnd" "and_gate_0/Gnd"
+merge "and_gate_0/Gnd" "xor_gate_7/inverter_2/gnd"
+merge "xor_gate_7/inverter_2/gnd" "xor_gate_7/inverter_0/gnd"
+merge "xor_gate_7/inverter_0/gnd" "and_five_0/inverter_0/gnd"
+merge "and_five_0/inverter_0/gnd" "and_five_0/gnd"
+merge "and_five_0/gnd" "and_four_1/inverter_0/gnd"
+merge "and_four_1/inverter_0/gnd" "and_four_1/gnd"
+merge "and_four_1/gnd" "and_three_2/gnd"
+merge "and_three_2/gnd" "or_four_0/gnd"
+merge "or_four_0/gnd" "and_gate_7/Gnd"
+merge "and_gate_7/Gnd" "xor_gate_0/inverter_2/gnd"
+merge "xor_gate_0/inverter_2/gnd" "and_gate_1/Gnd"
+merge "and_gate_1/Gnd" "xor_gate_0/inverter_0/gnd"
+merge "xor_gate_0/inverter_0/gnd" "xor_gate_6/inverter_2/gnd"
+merge "xor_gate_6/inverter_2/gnd" "xor_gate_6/inverter_0/gnd"
+merge "xor_gate_6/inverter_0/gnd" "and_four_0/gnd"
+merge "and_four_0/gnd" "and_three_1/gnd"
+merge "and_three_1/gnd" "and_gate_6/Gnd"
+merge "and_gate_6/Gnd" "xor_gate_1/inverter_2/gnd"
+merge "xor_gate_1/inverter_2/gnd" "or_three_0/gnd"
+merge "or_three_0/gnd" "and_gate_2/Gnd"
+merge "and_gate_2/Gnd" "xor_gate_1/inverter_0/gnd"
+merge "xor_gate_1/inverter_0/gnd" "xor_gate_5/inverter_2/gnd"
+merge "xor_gate_5/inverter_2/gnd" "xor_gate_5/inverter_0/gnd"
+merge "xor_gate_5/inverter_0/gnd" "and_three_0/gnd"
+merge "and_three_0/gnd" "and_gate_5/Gnd"
+merge "and_gate_5/Gnd" "xor_gate_2/inverter_2/gnd"
+merge "xor_gate_2/inverter_2/gnd" "or_gate_0/gnd"
+merge "or_gate_0/gnd" "and_gate_3/Gnd"
+merge "and_gate_3/Gnd" "xor_gate_2/inverter_0/gnd"
+merge "xor_gate_2/inverter_0/gnd" "xor_gate_4/inverter_0/gnd"
+merge "xor_gate_4/inverter_0/gnd" "and_gate_4/Gnd"
+merge "and_gate_4/Gnd" "xor_gate_3/inverter_2/gnd"
+merge "xor_gate_3/inverter_2/gnd" "xor_gate_3/inverter_0/gnd"
+merge "xor_gate_3/inverter_0/gnd" "m1_n29_n451#"
+merge "or_five_0/E" "and_five_0/inverter_0/Inv_out" -4072.38 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 -709 -760 0 0 0 0 0 0 0 0
+merge "and_five_0/inverter_0/Inv_out" "m1_135_6#"
+merge "or_three_0/C" "and_three_0/inverter_0/Inv_out" -1920.39 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -696 -348 0 0 0 0 0 0 0 0
+merge "and_three_0/inverter_0/Inv_out" "P0_P1_C0"
+merge "xor_gate_5/A" "xor_gate_5/inverter_0/INP" -16.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_5/inverter_0/INP" "or_gate_0/inverter_0/Inv_out"
+merge "or_gate_0/inverter_0/Inv_out" "carry_1"
+merge "xor_gate_7/B" "and_five_0/A" -2691.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 81 -40 -380 -490 -86 -86 0 0 0 0 0 0
+merge "and_five_0/A" "and_four_1/A"
+merge "and_four_1/A" "and_three_2/A"
+merge "and_three_2/A" "and_gate_7/A"
+merge "and_gate_7/A" "xor_gate_0/inverter_3/Inv_out"
+merge "xor_gate_0/inverter_3/Inv_out" "m1_140_n55#"
+merge "and_five_0/B" "and_four_1/B" -3651.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50 -56 -802 -628 -1049 -538 0 0 0 0 0 0
+merge "and_four_1/B" "and_three_2/B"
+merge "and_three_2/B" "xor_gate_6/B"
+merge "xor_gate_6/B" "and_four_0/A"
+merge "and_four_0/A" "and_three_1/A"
+merge "and_three_1/A" "and_gate_6/A"
+merge "and_gate_6/A" "xor_gate_1/inverter_3/Inv_out"
+merge "xor_gate_1/inverter_3/Inv_out" "m1_140_n179#"
+merge "and_four_1/D" "and_three_1/C" -3005.88 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47 -40 -858 -545 -25 -20 0 0 0 0 0 0
+merge "and_three_1/C" "and_gate_5/B"
+merge "and_gate_5/B" "or_gate_0/B"
+merge "or_gate_0/B" "and_gate_3/inverter_0/Inv_out"
+merge "and_gate_3/inverter_0/Inv_out" "G0"
+merge "or_four_0/D" "and_four_0/inverter_0/Inv_out" -3529.96 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26 -18 -768 -648 -98 -56 0 0 0 0 0 0
+merge "and_four_0/inverter_0/Inv_out" "m1_118_n107#"
+merge "xor_gate_3/B" "and_gate_3/A" -144.606 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -18 0 0 0 0 0 0 0 0
+merge "and_gate_3/A" "A0"
+merge "and_gate_3/B" "xor_gate_3/inverter_0/INP" -18.5592 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_3/inverter_0/INP" "B0"
+merge "xor_gate_0/B" "and_gate_0/A" -89.3283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 -8 0 0 0 0 0 0 0 0
+merge "and_gate_0/A" "A3"
+merge "and_gate_4/inverter_0/Inv_out" "or_gate_0/A" -54.9687 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "or_gate_0/A" "m1_82_n360#"
+merge "or_five_0/A" "and_gate_0/inverter_0/Inv_out" -16.032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -16 0 0 0 0 0 0 0 0 0 0
+merge "and_gate_0/inverter_0/Inv_out" "m1_58_17#"
+merge "xor_gate_3/inverter_2/w_0_0#" "w_140_n417#" 7.81597e-14 0 0 0 0 0 -40 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_6/A" "xor_gate_6/inverter_0/INP" -867.089 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1032 -540 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_6/inverter_0/INP" "or_three_0/inverter_0/Inv_out"
+merge "or_three_0/inverter_0/Inv_out" "carry_2"
+merge "and_gate_7/B" "or_four_0/A" -64.6299 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24 -12 -7 0 0 0 0 0 0 0 0
+merge "or_four_0/A" "and_gate_1/inverter_0/Inv_out"
+merge "and_gate_1/inverter_0/Inv_out" "m1_58_n107#"
+merge "xor_gate_5/inverter_3/Inv_out" "S1" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "or_three_0/B" "and_gate_5/inverter_0/Inv_out" -348.178 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -43 -56 0 0 0 0 0 0 0 0
+merge "and_gate_5/inverter_0/Inv_out" "P1_G0"
+merge "and_gate_2/A" "xor_gate_2/B" -89.3283 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 -8 0 0 0 0 0 0 0 0
+merge "xor_gate_2/B" "A1"
+merge "xor_gate_7/A" "xor_gate_7/inverter_0/INP" -1416.79 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1700 -878 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_7/inverter_0/INP" "or_four_0/inverter_0/Inv_out"
+merge "or_four_0/inverter_0/Inv_out" "carry_3"
+merge "or_five_0/C" "and_three_2/inverter_0/Inv_out" -1194.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -18 -400 -200 0 0 0 0 0 0 0 0
+merge "and_three_2/inverter_0/Inv_out" "m1_115_6#"
+merge "and_three_2/C" "and_gate_6/B" -1350.26 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29 -32 -421 -220 -626 -320 0 0 0 0 0 0
+merge "and_gate_6/B" "or_three_0/A"
+merge "or_three_0/A" "and_gate_2/inverter_0/Inv_out"
+merge "and_gate_2/inverter_0/Inv_out" "m1_58_n231#"
+merge "or_four_0/C" "and_three_1/inverter_0/Inv_out" -2654.13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 -20 -948 -474 0 0 0 0 0 0 0 0
+merge "and_three_1/inverter_0/Inv_out" "P2_P1-G0"
+merge "or_five_0/B" "and_gate_7/inverter_0/Inv_out" -100.902 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 -20 0 0 0 0 0 0 0 0 0 0
+merge "and_gate_7/inverter_0/Inv_out" "m1_106_1#"
+merge "or_five_0/D" "and_four_1/inverter_0/Inv_out" -2087.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 -18 -764 -386 0 0 0 0 0 0 0 0
+merge "and_four_1/inverter_0/Inv_out" "m1_125_11#"
+merge "xor_gate_7/inverter_3/Inv_out" "S3" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "xor_gate_4/inverter_3/Inv_out" "S0" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0

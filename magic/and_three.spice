@@ -1,0 +1,64 @@
+* SPICE3 file created from and_three.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+*Vin_a A gnd 1.8
+*Vin_b B gnd 1.8
+*Vin_c C gnd 0
+
+Vin_a A gnd pulse 0 1.8 0ns 1ps 1ps 10ns 20ns
+Vin_b B gnd pulse 0 1.8 0ns 1ps 1ps 20ns 40ns
+Vin_c C gnd pulse 0 1.8 0ns 1ps 1ps 40ns 80ns
+
+M1000 and_three_output NAND_three_out vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=128 ps=80
+M1001 and_three_output NAND_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=40 ps=36
+M1002 NAND_three_out A vdd vdd CMOSP w=8 l=2
++  ad=88 pd=54 as=0 ps=0
+M1003 vdd B NAND_three_out vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1004 NAND_three_out C vdd vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1005 P1 A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1006 P2 B P1 gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1007 NAND_three_out C P2 gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+
+C0 vdd and_three_output 0.0fF
+C1 vdd vdd 0.1fF
+C2 vdd and_three_output 0.1fF
+C3 and_three_output gnd 0.0fF
+C4 vdd NAND_three_out 0.1fF
+C5 NAND_three_out and_three_output 0.1fF
+C6 vdd NAND_three_out 0.3fF
+C7 NAND_three_out gnd 0.1fF
+C8 P2 gnd 0.0fF
+C9 P1 gnd 0.0fF
+C10 gnd gnd 0.3fF
+C11 and_three_output gnd 0.1fF
+C12 vdd gnd 0.2fF
+C13 NAND_three_out gnd 0.7fF
+C14 vdd gnd 1.5fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(A) v(B) v(C)
+*plot v(B)
+*plot v(C)
+plot v(and_three_output)
+
+.endc
+
+.end

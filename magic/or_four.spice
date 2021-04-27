@@ -1,0 +1,61 @@
+* SPICE3 file created from or_four.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+Vin_a A gnd pulse 0 1.8 0ns 1ps 1ps 10ns 20ns
+Vin_b B gnd pulse 0 1.8 0ns 1ps 1ps 20ns 40ns
+Vin_c C gnd pulse 0 1.8 0ns 1ps 1ps 40ns 80ns
+Vin_d D gnd pulse 0 1.8 0ns 1ps 1ps 80ns 160ns
+
+M1000 or_four_output nor_three_output vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=80 ps=52
+M1001 or_four_output nor_three_output gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=84 ps=74
+M1002 a_100_44# A vdd vdd CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1003 a_108_44# B a_100_44# vdd CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1004 a_116_44# C a_108_44# vdd CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1005 nor_three_output D a_116_44# vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1006 nor_three_output A gnd gnd CMOSN w=4 l=2
++  ad=48 pd=40 as=0 ps=0
+M1007 gnd B nor_three_output gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1008 nor_three_output C gnd gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1009 gnd D nor_three_output gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+
+C0 vdd nor_three_output 0.1fF
+C1 vdd vdd 0.1fF
+C2 nor_three_output vdd 0.1fF
+C3 vdd or_four_output 0.0fF
+C4 nor_three_output or_four_output 0.1fF
+C5 nor_three_output gnd 0.4fF
+C6 vdd or_four_output 0.1fF
+C7 or_four_output gnd 0.0fF
+C8 gnd gnd 0.3fF
+C9 or_four_output gnd 0.1fF
+C10 vdd gnd 0.2fF
+C11 nor_three_output gnd 0.7fF
+C12 vdd gnd 1.7fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(A) v(B) v(C) v(D)
+plot v(or_four_output)
+
+.endc
+
+.end

@@ -1,0 +1,45 @@
+timestamp 1619431676
+version 8.0
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use inverter inverter_0 1 0 128 0 1 34
+node "a_109_8#" 10 0 109 8 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_101_8#" 10 0 101 8 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_93_8#" 10 0 93 8 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "gnd" 9 181.939 86 8 ndc 20 18 0 0 0 0 0 0 0 0 0 0 0 0 224 120 0 0 0 0 0 0 0 0 0 0
+node "nand_three_out" 55 132.664 93 44 pdif 20 18 96 56 0 0 0 0 0 0 0 0 0 0 356 186 0 0 0 0 0 0 0 0 0 0
+node "vdd" 80 116.765 86 44 pdc 0 0 128 80 0 0 0 0 0 0 0 0 0 0 360 188 0 0 0 0 0 0 0 0 0 0
+node "D" 223 260.994 115 5 p 0 0 0 0 0 0 0 0 0 0 132 128 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "C" 208 241.914 105 28 pc 0 0 0 0 0 0 0 0 0 0 124 120 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "B" 216 257.694 94 30 pc 0 0 0 0 0 0 0 0 0 0 128 124 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "A" 223 246.074 83 33 pc 0 0 0 0 0 0 0 0 0 0 132 128 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "w_80_38#" 2230 964.224 80 38 nw 0 0 0 0 960 136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "w_80_38#" "nand_three_out" 76.3098
+cap "A" "B" 110.352
+cap "B" "C" 94.1209
+cap "A" "vdd" 5.89114
+cap "C" "D" 125.694
+cap "w_80_38#" "A" 88.01
+cap "B" "nand_three_out" 143.616
+cap "w_80_38#" "B" 64.77
+cap "C" "nand_three_out" 134.735
+cap "w_80_38#" "C" 68.93
+cap "D" "nand_three_out" 214.892
+cap "w_80_38#" "D" 73.09
+cap "vdd" "nand_three_out" 494.856
+cap "w_80_38#" "vdd" 122.945
+cap "nand_three_out" "gnd" 82.476
+fet nfet 115 8 116 9 8 12 "Gnd!" "D" 4 0 "a_109_8#" 4 0 "nand_three_out" 4 0
+fet nfet 107 8 108 9 8 12 "Gnd!" "C" 4 0 "a_101_8#" 4 0 "a_109_8#" 4 0
+fet nfet 99 8 100 9 8 12 "Gnd!" "B" 4 0 "a_93_8#" 4 0 "a_101_8#" 4 0
+fet nfet 91 8 92 9 8 12 "Gnd!" "A" 4 0 "gnd" 4 0 "a_93_8#" 4 0
+fet pfet 115 44 116 45 16 20 "w_80_38#" "D" 4 0 "nand_three_out" 8 0 "vdd" 8 0
+fet pfet 107 44 108 45 16 20 "w_80_38#" "C" 4 0 "vdd" 8 0 "nand_three_out" 8 0
+fet pfet 99 44 100 45 16 20 "w_80_38#" "B" 4 0 "nand_three_out" 8 0 "vdd" 8 0
+fet pfet 91 44 92 45 16 20 "w_80_38#" "A" 4 0 "vdd" 8 0 "nand_three_out" 8 0
+merge "inverter_0/INP" "nand_three_out" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/gnd" "gnd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/w_0_0#" "w_80_38#" 0 0 0 0 0 0 -32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/vdd" "vdd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0

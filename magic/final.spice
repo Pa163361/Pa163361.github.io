@@ -1,0 +1,1115 @@
+* SPICE3 file created from final.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vol vdd gnd 'SUPPLY'
+
+Vin_a0 A0 gnd 1.8
+Vin_a1 A1 gnd 1.8
+Vin_a2 A2 gnd 1.8
+Vin_a3 A3 gnd 1.8
+
+Vin_b0 B0 gnd 1.8
+Vin_b1 B1 gnd 1.8
+Vin_b2 B2 gnd 1.8
+Vin_b3 B3 gnd 1.8
+
+Vin_carry_0 carry_0 gnd 0
+
+M1000 S0 xor_gate_4/inverter_3/INP vdd xor_gate_4/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=3456 ps=2224
+M1001 S0 xor_gate_4/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=1496 ps=1340
+M1002 xor_gate_4/inverter_3/INP xor_gate_4/XOR_out vdd xor_gate_4/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1003 xor_gate_4/inverter_3/INP xor_gate_4/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1004 xor_gate_4/B_bar P0 vdd xor_gate_4/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1005 xor_gate_4/B_bar P0 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1006 xor_gate_4/A_bar carry_0 vdd xor_gate_4/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1007 xor_gate_4/A_bar carry_0 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1008 xor_gate_4/XOR_out P0 xor_gate_4/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1009 carry_0 xor_gate_4/B_bar xor_gate_4/XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1010 or_gate_0/A and_gate_4/Out vdd and_gate_4/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1011 or_gate_0/A and_gate_4/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1012 and_gate_4/Out P0 vdd and_gate_4/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1013 vdd carry_0 and_gate_4/Out and_gate_4/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1014 and_gate_4/a_13_n26# P0 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1015 and_gate_4/Out carry_0 and_gate_4/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1016 P0 xor_gate_3/inverter_3/INP vdd w_140_n417# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1017 P0 xor_gate_3/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1018 xor_gate_3/inverter_3/INP xor_gate_3/XOR_out vdd w_140_n417# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1019 xor_gate_3/inverter_3/INP xor_gate_3/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1020 xor_gate_3/B_bar A0 vdd xor_gate_3/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1021 xor_gate_3/B_bar A0 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1022 xor_gate_3/A_bar B0 vdd xor_gate_3/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1023 xor_gate_3/A_bar B0 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1024 xor_gate_3/XOR_out A0 xor_gate_3/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1025 B0 xor_gate_3/B_bar xor_gate_3/XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1026 carry_1 or_gate_0/or_out vdd or_gate_0/w_69_34# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1027 carry_1 or_gate_0/or_out gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1028 or_gate_0/a_82_40# G0 vdd or_gate_0/w_69_34# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1029 or_gate_0/or_out or_gate_0/A or_gate_0/a_82_40# or_gate_0/w_69_34# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1030 or_gate_0/or_out G0 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1031 gnd or_gate_0/A or_gate_0/or_out gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1032 G0 and_gate_3/Out vdd and_gate_3/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1033 G0 and_gate_3/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1034 and_gate_3/Out A0 vdd and_gate_3/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1035 vdd B0 and_gate_3/Out and_gate_3/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1036 and_gate_3/a_13_n26# A0 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1037 and_gate_3/Out B0 and_gate_3/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1038 S1 xor_gate_5/inverter_3/INP vdd xor_gate_5/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1039 S1 xor_gate_5/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1040 xor_gate_5/inverter_3/INP xor_gate_5/XOR_out vdd xor_gate_5/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1041 xor_gate_5/inverter_3/INP xor_gate_5/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1042 xor_gate_5/B_bar P1 vdd xor_gate_5/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1043 xor_gate_5/B_bar P1 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1044 xor_gate_5/A_bar carry_1 vdd xor_gate_5/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1045 xor_gate_5/A_bar carry_1 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1046 xor_gate_5/XOR_out P1 xor_gate_5/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1047 carry_1 xor_gate_5/B_bar xor_gate_5/XOR_out gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1048 P0_P1_C0 and_three_0/NAND_three_out vdd and_three_0/w_70_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1049 P0_P1_C0 and_three_0/NAND_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1050 and_three_0/NAND_three_out P1 vdd and_three_0/w_70_38# CMOSP w=8 l=2
++  ad=88 pd=54 as=0 ps=0
+M1051 vdd P0 and_three_0/NAND_three_out and_three_0/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1052 and_three_0/NAND_three_out carry_0 vdd and_three_0/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1053 and_three_0/a_83_8# P1 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1054 and_three_0/a_91_8# P0 and_three_0/a_83_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1055 and_three_0/NAND_three_out carry_0 and_three_0/a_91_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1056 P1_G0 and_gate_5/Out vdd and_gate_5/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1057 P1_G0 and_gate_5/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1058 and_gate_5/Out P1 vdd and_gate_5/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1059 vdd G0 and_gate_5/Out and_gate_5/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1060 and_gate_5/a_13_n26# P1 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1061 and_gate_5/Out G0 and_gate_5/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1062 P1 xor_gate_2/inverter_3/INP vdd xor_gate_2/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1063 P1 xor_gate_2/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1064 xor_gate_2/inverter_3/INP xor_gate_2/XOR_out vdd xor_gate_2/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1065 xor_gate_2/inverter_3/INP xor_gate_2/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1066 xor_gate_2/B_bar A1 vdd xor_gate_2/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1067 xor_gate_2/B_bar A1 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1068 xor_gate_2/A_bar B1 vdd xor_gate_2/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1069 xor_gate_2/A_bar B1 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1070 xor_gate_2/XOR_out A1 xor_gate_2/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1071 B1 xor_gate_2/B_bar xor_gate_2/XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1072 carry_2 or_three_0/NOR_three_out vdd or_three_0/w_95_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1073 carry_2 or_three_0/NOR_three_out gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1074 or_three_0/a_108_44# or_three_0/A vdd or_three_0/w_95_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1075 or_three_0/a_116_44# P1_G0 or_three_0/a_108_44# or_three_0/w_95_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1076 or_three_0/NOR_three_out P0_P1_C0 or_three_0/a_116_44# or_three_0/w_95_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1077 or_three_0/NOR_three_out or_three_0/A gnd gnd CMOSN w=4 l=2
++  ad=44 pd=38 as=0 ps=0
+M1078 gnd P1_G0 or_three_0/NOR_three_out gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1079 or_three_0/NOR_three_out P0_P1_C0 gnd gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1080 or_three_0/A and_gate_2/Out vdd and_gate_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1081 or_three_0/A and_gate_2/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1082 and_gate_2/Out A1 vdd and_gate_2/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1083 vdd B1 and_gate_2/Out and_gate_2/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1084 and_gate_2/a_13_n26# A1 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1085 and_gate_2/Out B1 and_gate_2/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1086 S2 xor_gate_6/inverter_3/INP vdd xor_gate_6/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1087 S2 xor_gate_6/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1088 xor_gate_6/inverter_3/INP xor_gate_6/XOR_out vdd xor_gate_6/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1089 xor_gate_6/inverter_3/INP xor_gate_6/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1090 xor_gate_6/B_bar and_gate_6/A vdd xor_gate_6/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1091 xor_gate_6/B_bar and_gate_6/A gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1092 xor_gate_6/A_bar carry_2 vdd xor_gate_6/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1093 xor_gate_6/A_bar carry_2 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1094 xor_gate_6/XOR_out and_gate_6/A xor_gate_6/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1095 carry_2 xor_gate_6/B_bar xor_gate_6/XOR_out gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1096 or_four_0/D and_four_0/nand_three_out vdd and_four_0/w_80_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1097 or_four_0/D and_four_0/nand_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1098 and_four_0/nand_three_out and_gate_6/A vdd and_four_0/w_80_38# CMOSP w=8 l=2
++  ad=96 pd=56 as=0 ps=0
+M1099 vdd P1 and_four_0/nand_three_out and_four_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1100 and_four_0/nand_three_out P0 vdd and_four_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1101 vdd carry_0 and_four_0/nand_three_out and_four_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1102 and_four_0/a_93_8# and_gate_6/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1103 and_four_0/a_101_8# P1 and_four_0/a_93_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1104 and_four_0/a_109_8# P0 and_four_0/a_101_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1105 and_four_0/nand_three_out carry_0 and_four_0/a_109_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1106 P2_P1-G0 and_three_1/NAND_three_out vdd and_three_1/w_70_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1107 P2_P1-G0 and_three_1/NAND_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1108 and_three_1/NAND_three_out and_gate_6/A vdd and_three_1/w_70_38# CMOSP w=8 l=2
++  ad=88 pd=54 as=0 ps=0
+M1109 vdd P1 and_three_1/NAND_three_out and_three_1/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1110 and_three_1/NAND_three_out G0 vdd and_three_1/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1111 and_three_1/a_83_8# and_gate_6/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1112 and_three_1/a_91_8# P1 and_three_1/a_83_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1113 and_three_1/NAND_three_out G0 and_three_1/a_91_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1114 or_four_0/B and_gate_6/Out vdd and_gate_6/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1115 or_four_0/B and_gate_6/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1116 and_gate_6/Out and_gate_6/A vdd and_gate_6/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1117 vdd or_three_0/A and_gate_6/Out and_gate_6/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1118 and_gate_6/a_13_n26# and_gate_6/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1119 and_gate_6/Out or_three_0/A and_gate_6/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1120 and_gate_6/A xor_gate_1/inverter_3/INP vdd xor_gate_1/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1121 and_gate_6/A xor_gate_1/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1122 xor_gate_1/inverter_3/INP xor_gate_1/XOR_out vdd xor_gate_1/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1123 xor_gate_1/inverter_3/INP xor_gate_1/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1124 xor_gate_1/B_bar A2 vdd xor_gate_1/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1125 xor_gate_1/B_bar A2 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1126 xor_gate_1/A_bar B2 vdd xor_gate_1/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1127 xor_gate_1/A_bar B2 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1128 xor_gate_1/XOR_out A2 xor_gate_1/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1129 B2 xor_gate_1/B_bar xor_gate_1/XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1130 carry_3 or_four_0/inverter_0/INP vdd or_four_0/w_87_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1131 carry_3 or_four_0/inverter_0/INP gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1132 or_four_0/a_100_44# or_four_0/A vdd or_four_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1133 or_four_0/a_108_44# or_four_0/B or_four_0/a_100_44# or_four_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1134 or_four_0/a_116_44# P2_P1-G0 or_four_0/a_108_44# or_four_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1135 or_four_0/inverter_0/INP or_four_0/D or_four_0/a_116_44# or_four_0/w_87_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1136 or_four_0/inverter_0/INP or_four_0/A gnd gnd CMOSN w=4 l=2
++  ad=48 pd=40 as=0 ps=0
+M1137 gnd or_four_0/B or_four_0/inverter_0/INP gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1138 or_four_0/inverter_0/INP P2_P1-G0 gnd gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1139 gnd or_four_0/D or_four_0/inverter_0/INP gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1140 or_four_0/A and_gate_1/Out vdd and_gate_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1141 or_four_0/A and_gate_1/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1142 and_gate_1/Out A2 vdd and_gate_1/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1143 vdd B2 and_gate_1/Out and_gate_1/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1144 and_gate_1/a_13_n26# A2 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1145 and_gate_1/Out B2 and_gate_1/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1146 S3 xor_gate_7/inverter_3/INP vdd xor_gate_7/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1147 S3 xor_gate_7/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1148 xor_gate_7/inverter_3/INP xor_gate_7/XOR_out vdd xor_gate_7/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1149 xor_gate_7/inverter_3/INP xor_gate_7/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1150 xor_gate_7/B_bar and_gate_7/A vdd xor_gate_7/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1151 xor_gate_7/B_bar and_gate_7/A gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1152 xor_gate_7/A_bar carry_3 vdd xor_gate_7/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1153 xor_gate_7/A_bar carry_3 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1154 xor_gate_7/XOR_out and_gate_7/A xor_gate_7/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1155 carry_3 xor_gate_7/B_bar xor_gate_7/XOR_out gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1156 or_five_0/E and_five_0/inverter_0/INP vdd and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1157 or_five_0/E and_five_0/inverter_0/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1158 and_five_0/inverter_0/INP and_gate_7/A vdd and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=136 pd=82 as=0 ps=0
+M1159 vdd and_gate_6/A and_five_0/inverter_0/INP and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1160 and_five_0/inverter_0/INP P1 vdd and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1161 vdd P0 and_five_0/inverter_0/INP and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1162 and_five_0/inverter_0/INP carry_0 vdd and_five_0/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1163 and_five_0/a_93_8# and_gate_7/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1164 and_five_0/a_101_8# and_gate_6/A and_five_0/a_93_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1165 and_five_0/a_109_8# P1 and_five_0/a_101_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1166 and_five_0/a_117_8# P0 and_five_0/a_109_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1167 and_five_0/inverter_0/INP carry_0 and_five_0/a_117_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1168 or_five_0/D and_four_1/nand_three_out vdd and_four_1/w_80_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1169 or_five_0/D and_four_1/nand_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1170 and_four_1/nand_three_out and_gate_7/A vdd and_four_1/w_80_38# CMOSP w=8 l=2
++  ad=96 pd=56 as=0 ps=0
+M1171 vdd and_gate_6/A and_four_1/nand_three_out and_four_1/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1172 and_four_1/nand_three_out P1 vdd and_four_1/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1173 vdd G0 and_four_1/nand_three_out and_four_1/w_80_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1174 and_four_1/a_93_8# and_gate_7/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1175 and_four_1/a_101_8# and_gate_6/A and_four_1/a_93_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1176 and_four_1/a_109_8# P1 and_four_1/a_101_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1177 and_four_1/nand_three_out G0 and_four_1/a_109_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1178 or_five_0/C and_three_2/NAND_three_out vdd and_three_2/w_70_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1179 or_five_0/C and_three_2/NAND_three_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1180 and_three_2/NAND_three_out and_gate_7/A vdd and_three_2/w_70_38# CMOSP w=8 l=2
++  ad=88 pd=54 as=0 ps=0
+M1181 vdd and_gate_6/A and_three_2/NAND_three_out and_three_2/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1182 and_three_2/NAND_three_out or_three_0/A vdd and_three_2/w_70_38# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1183 and_three_2/a_83_8# and_gate_7/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1184 and_three_2/a_91_8# and_gate_6/A and_three_2/a_83_8# gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1185 and_three_2/NAND_three_out or_three_0/A and_three_2/a_91_8# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1186 or_five_0/B and_gate_7/Out vdd and_gate_7/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1187 or_five_0/B and_gate_7/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1188 and_gate_7/Out and_gate_7/A vdd and_gate_7/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1189 vdd or_four_0/A and_gate_7/Out and_gate_7/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1190 and_gate_7/a_13_n26# and_gate_7/A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1191 and_gate_7/Out or_four_0/A and_gate_7/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1192 and_gate_7/A xor_gate_0/inverter_3/INP vdd xor_gate_0/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1193 and_gate_7/A xor_gate_0/inverter_3/INP gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1194 xor_gate_0/inverter_3/INP xor_gate_0/XOR_out vdd xor_gate_0/inverter_2/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1195 xor_gate_0/inverter_3/INP xor_gate_0/XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1196 xor_gate_0/B_bar A3 vdd xor_gate_0/inverter_1/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1197 xor_gate_0/B_bar A3 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1198 xor_gate_0/A_bar B3 vdd xor_gate_0/inverter_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1199 xor_gate_0/A_bar B3 gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1200 xor_gate_0/XOR_out A3 xor_gate_0/A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1201 B3 xor_gate_0/B_bar xor_gate_0/XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1202 carry_4 or_five_0/nor_five_output vdd or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1203 carry_4 or_five_0/nor_five_output gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1204 or_five_0/a_100_44# or_five_0/A vdd or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1205 or_five_0/a_108_44# or_five_0/B or_five_0/a_100_44# or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1206 or_five_0/a_116_44# or_five_0/C or_five_0/a_108_44# or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1207 or_five_0/a_124_44# or_five_0/D or_five_0/a_116_44# or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1208 or_five_0/nor_five_output or_five_0/E or_five_0/a_124_44# or_five_0/w_87_38# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1209 or_five_0/nor_five_output or_five_0/A gnd gnd CMOSN w=4 l=2
++  ad=68 pd=58 as=0 ps=0
+M1210 gnd or_five_0/B or_five_0/nor_five_output gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1211 or_five_0/nor_five_output or_five_0/C gnd gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1212 gnd or_five_0/D or_five_0/nor_five_output gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1213 or_five_0/nor_five_output or_five_0/E gnd gnd CMOSN w=4 l=2
++  ad=0 pd=0 as=0 ps=0
+M1214 or_five_0/A and_gate_0/Out vdd and_gate_0/w_0_0# CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1215 or_five_0/A and_gate_0/Out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1216 and_gate_0/Out A3 vdd and_gate_0/w_0_0# CMOSP w=8 l=2
++  ad=48 pd=28 as=0 ps=0
+M1217 vdd B3 and_gate_0/Out and_gate_0/w_0_0# CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1218 and_gate_0/a_13_n26# A3 gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1219 and_gate_0/Out B3 and_gate_0/a_13_n26# gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+
+C0 vdd xor_gate_7/B_bar 0.2fF
+C1 and_gate_7/A and_gate_7/Out 0.1fF
+C2 vdd or_four_0/A 0.1fF
+C3 vdd xor_gate_0/inverter_1/w_0_0# 0.0fF
+C4 and_gate_3/w_0_0# vdd 0.1fF
+C5 and_four_0/nand_three_out gnd 0.1fF
+C6 P1 carry_0 0.2fF
+C7 and_gate_6/Out or_four_0/B 0.1fF
+C8 xor_gate_6/A_bar vdd 0.1fF
+C9 xor_gate_3/inverter_3/INP vdd 0.1fF
+C10 xor_gate_5/inverter_1/w_0_0# P1 0.1fF
+C11 xor_gate_4/A_bar gnd 0.0fF
+C12 and_gate_2/Out and_gate_2/w_0_0# 0.1fF
+C13 or_three_0/NOR_three_out P0_P1_C0 0.2fF
+C14 and_four_0/w_80_38# and_four_0/nand_three_out 0.1fF
+C15 and_gate_4/Out or_gate_0/A 0.1fF
+C16 xor_gate_6/XOR_out gnd 0.0fF
+C17 and_gate_1/Out or_four_0/A 0.1fF
+C18 carry_1 gnd 0.3fF
+C19 xor_gate_6/XOR_out xor_gate_6/B_bar 0.1fF
+C20 gnd or_five_0/A 0.0fF
+C21 vdd and_three_2/NAND_three_out 0.3fF
+C22 xor_gate_1/B_bar gnd 0.0fF
+C23 P0_P1_C0 gnd 0.0fF
+C24 and_gate_5/w_0_0# P1_G0 0.0fF
+C25 and_gate_0/Out and_gate_0/w_0_0# 0.1fF
+C26 and_gate_1/Out vdd 0.2fF
+C27 or_five_0/w_87_38# or_five_0/C 0.1fF
+C28 and_five_0/w_80_38# P1 0.1fF
+C29 and_four_0/nand_three_out P1 0.2fF
+C30 xor_gate_5/XOR_out xor_gate_5/B_bar 0.1fF
+C31 vdd carry_4 0.1fF
+C32 xor_gate_2/inverter_2/w_0_0# xor_gate_2/XOR_out 0.1fF
+C33 and_gate_6/A and_four_1/w_80_38# 0.1fF
+C34 or_three_0/NOR_three_out vdd 0.1fF
+C35 and_gate_6/A and_three_2/w_70_38# 0.1fF
+C36 xor_gate_4/B_bar P0 0.5fF
+C37 or_gate_0/A or_gate_0/w_69_34# 0.1fF
+C38 xor_gate_7/B_bar gnd 0.0fF
+C39 xor_gate_1/inverter_0/w_0_0# xor_gate_1/A_bar 0.0fF
+C40 and_gate_6/w_0_0# vdd 0.1fF
+C41 xor_gate_6/inverter_3/INP S2 0.1fF
+C42 or_four_0/A gnd 1.3fF
+C43 and_three_0/NAND_three_out P0_P1_C0 0.1fF
+C44 or_five_0/A or_five_0/B 0.1fF
+C45 xor_gate_3/inverter_0/w_0_0# xor_gate_3/A_bar 0.0fF
+C46 xor_gate_6/inverter_2/w_0_0# xor_gate_6/inverter_3/INP 0.1fF
+C47 carry_1 P1 0.0fF
+C48 and_three_2/w_70_38# or_five_0/C 0.0fF
+C49 xor_gate_6/A_bar gnd 0.0fF
+C50 and_three_0/w_70_38# carry_0 0.1fF
+C51 xor_gate_3/inverter_3/INP gnd 0.1fF
+C52 xor_gate_6/B_bar xor_gate_6/A_bar 0.1fF
+C53 vdd gnd 0.2fF
+C54 and_gate_5/Out P1_G0 0.1fF
+C55 P2_P1-G0 or_four_0/A 0.2fF
+C56 P0_P1_C0 P1 0.1fF
+C57 and_gate_7/A and_four_1/w_80_38# 0.1fF
+C58 and_gate_7/A and_three_2/w_70_38# 0.1fF
+C59 xor_gate_6/B_bar vdd 0.2fF
+C60 and_gate_7/A or_five_0/E 0.3fF
+C61 or_four_0/A or_five_0/B 0.0fF
+C62 and_four_0/w_80_38# vdd 0.2fF
+C63 xor_gate_4/inverter_1/w_0_0# vdd 0.0fF
+C64 S1 vdd 0.1fF
+C65 xor_gate_2/inverter_2/w_0_0# P1 0.0fF
+C66 and_three_2/NAND_three_out gnd 0.1fF
+C67 P2_P1-G0 vdd 0.2fF
+C68 and_three_0/NAND_three_out vdd 0.3fF
+C69 or_three_0/w_95_38# P0_P1_C0 0.1fF
+C70 xor_gate_6/inverter_0/w_0_0# and_gate_6/A 0.0fF
+C71 and_gate_1/Out gnd 0.1fF
+C72 xor_gate_4/inverter_2/w_0_0# vdd 0.1fF
+C73 vdd or_five_0/B 0.2fF
+C74 xor_gate_1/inverter_3/INP vdd 0.1fF
+C75 and_three_1/NAND_three_out and_gate_6/A 0.0fF
+C76 xor_gate_5/inverter_2/w_0_0# vdd 0.1fF
+C77 xor_gate_4/XOR_out xor_gate_4/B_bar 0.1fF
+C78 and_three_0/a_83_8# P0 0.0fF
+C79 gnd carry_4 0.0fF
+C80 P0_P1_C0 or_three_0/A 0.0fF
+C81 and_gate_4/Out carry_0 0.2fF
+C82 and_gate_4/w_0_0# P0 0.1fF
+C83 xor_gate_7/inverter_3/INP xor_gate_7/inverter_2/w_0_0# 0.1fF
+C84 and_four_0/a_93_8# P1 0.0fF
+C85 or_three_0/NOR_three_out gnd 0.3fF
+C86 carry_1 xor_gate_5/A_bar 0.1fF
+C87 and_gate_5/a_13_n26# P1 0.0fF
+C88 xor_gate_2/A_bar vdd 0.1fF
+C89 vdd P1 0.4fF
+C90 and_gate_6/A and_four_1/a_93_8# 0.0fF
+C91 xor_gate_1/XOR_out xor_gate_1/B_bar 0.1fF
+C92 or_gate_0/A or_gate_0/a_82_40# 0.0fF
+C93 xor_gate_3/inverter_3/INP xor_gate_3/XOR_out 0.1fF
+C94 vdd or_five_0/nor_five_output 0.1fF
+C95 xor_gate_7/inverter_3/INP xor_gate_7/XOR_out 0.1fF
+C96 P0 and_five_0/a_93_8# 0.0fF
+C97 vdd and_four_1/nand_three_out 0.5fF
+C98 xor_gate_2/B_bar vdd 0.2fF
+C99 or_four_0/D carry_3 0.1fF
+C100 xor_gate_2/XOR_out gnd 0.0fF
+C101 xor_gate_5/inverter_1/w_0_0# xor_gate_5/B_bar 0.0fF
+C102 or_three_0/w_95_38# vdd 0.1fF
+C103 or_three_0/A and_three_2/a_91_8# 0.0fF
+C104 and_five_0/inverter_0/INP or_five_0/E 0.1fF
+C105 xor_gate_6/inverter_0/w_0_0# carry_2 0.1fF
+C106 w_140_n417# xor_gate_3/inverter_3/INP 0.1fF
+C107 and_gate_4/w_0_0# or_gate_0/A 0.0fF
+C108 and_three_0/w_70_38# P0_P1_C0 0.0fF
+C109 or_four_0/inverter_0/INP carry_3 0.1fF
+C110 xor_gate_6/B_bar gnd 0.0fF
+C111 carry_3 and_gate_6/A 0.2fF
+C112 or_four_0/B or_four_0/A 0.1fF
+C113 vdd S3 0.1fF
+C114 vdd or_three_0/A 1.2fF
+C115 w_140_n417# vdd 0.1fF
+C116 carry_3 P0 0.1fF
+C117 or_five_0/nor_five_output carry_4 0.1fF
+C118 S1 gnd 0.0fF
+C119 P2_P1-G0 gnd 0.1fF
+C120 and_three_0/NAND_three_out gnd 0.1fF
+C121 or_four_0/B vdd 0.2fF
+C122 xor_gate_5/A_bar vdd 0.1fF
+C123 xor_gate_0/inverter_0/w_0_0# xor_gate_0/A_bar 0.0fF
+C124 gnd or_five_0/B 0.0fF
+C125 xor_gate_7/inverter_0/w_0_0# xor_gate_7/A_bar 0.0fF
+C126 xor_gate_1/inverter_3/INP gnd 0.1fF
+C127 xor_gate_4/inverter_3/INP vdd 0.1fF
+C128 and_three_2/NAND_three_out or_three_0/A 0.2fF
+C129 or_three_0/w_95_38# or_three_0/NOR_three_out 0.1fF
+C130 xor_gate_2/XOR_out xor_gate_2/A_bar 0.0fF
+C131 or_four_0/D or_four_0/inverter_0/INP 0.1fF
+C132 or_four_0/D and_gate_6/A 0.2fF
+C133 vdd or_five_0/D 1.9fF
+C134 xor_gate_2/A_bar gnd 0.0fF
+C135 P1 gnd 2.5fF
+C136 and_gate_7/w_0_0# or_five_0/C 0.0fF
+C137 xor_gate_5/inverter_2/w_0_0# S1 0.0fF
+C138 and_three_0/w_70_38# vdd 0.1fF
+C139 gnd or_five_0/nor_five_output 0.5fF
+C140 xor_gate_7/inverter_1/w_0_0# and_gate_7/A 0.1fF
+C141 xor_gate_2/XOR_out xor_gate_2/B_bar 0.1fF
+C142 xor_gate_4/inverter_0/w_0_0# P0 0.0fF
+C143 or_three_0/NOR_three_out or_three_0/A 0.0fF
+C144 and_four_1/nand_three_out gnd 0.1fF
+C145 xor_gate_6/inverter_2/w_0_0# xor_gate_6/XOR_out 0.1fF
+C146 xor_gate_2/B_bar gnd 0.0fF
+C147 and_gate_6/w_0_0# or_three_0/A 0.1fF
+C148 xor_gate_3/XOR_out gnd 0.0fF
+C149 or_five_0/D or_five_0/a_116_44# 0.0fF
+C150 vdd xor_gate_0/inverter_2/w_0_0# 0.1fF
+C151 and_gate_7/A and_gate_7/w_0_0# 0.1fF
+C152 and_four_0/w_80_38# P1 0.1fF
+C153 and_gate_7/Out or_four_0/A 0.2fF
+C154 xor_gate_1/inverter_2/w_0_0# and_gate_6/A 0.0fF
+C155 and_three_0/NAND_three_out P1 0.0fF
+C156 or_gate_0/A or_gate_0/or_out 0.1fF
+C157 P0 and_gate_6/A 0.1fF
+C158 gnd xor_gate_0/XOR_out 0.0fF
+C159 and_gate_6/w_0_0# or_four_0/B 0.0fF
+C160 and_gate_6/A or_five_0/C 0.0fF
+C161 or_four_0/w_87_38# or_four_0/A 0.1fF
+C162 S3 gnd 0.0fF
+C163 xor_gate_3/inverter_0/w_0_0# vdd 0.0fF
+C164 or_three_0/A gnd 0.5fF
+C165 or_five_0/nor_five_output or_five_0/B 0.1fF
+C166 or_gate_0/w_69_34# carry_1 0.0fF
+C167 and_three_1/NAND_three_out and_three_1/w_70_38# 0.1fF
+C168 vdd and_gate_7/Out 0.2fF
+C169 and_gate_7/A and_gate_6/A 0.4fF
+C170 xor_gate_1/XOR_out gnd 0.0fF
+C171 or_four_0/B gnd 0.0fF
+C172 xor_gate_5/A_bar gnd 0.0fF
+C173 and_gate_4/Out vdd 0.2fF
+C174 xor_gate_4/B_bar xor_gate_4/A_bar 0.1fF
+C175 and_five_0/w_80_38# or_five_0/E 0.0fF
+C176 or_four_0/w_87_38# vdd 0.1fF
+C177 xor_gate_0/inverter_3/INP or_five_0/C 0.0fF
+C178 xor_gate_4/inverter_3/INP gnd 0.1fF
+C179 P2_P1-G0 or_three_0/A 0.1fF
+C180 and_gate_7/A P0 0.0fF
+C181 or_five_0/w_87_38# or_five_0/A 0.1fF
+C182 and_four_1/nand_three_out P1 0.1fF
+C183 xor_gate_2/B_bar xor_gate_2/A_bar 0.1fF
+C184 carry_2 and_gate_6/A 0.0fF
+C185 and_gate_4/w_0_0# carry_0 0.1fF
+C186 xor_gate_2/inverter_2/w_0_0# xor_gate_2/inverter_3/INP 0.1fF
+C187 S2 vdd 0.1fF
+C188 and_gate_7/A or_five_0/C 0.4fF
+C189 xor_gate_1/inverter_0/w_0_0# vdd 0.0fF
+C190 xor_gate_5/B_bar vdd 0.2fF
+C191 gnd or_five_0/D 0.0fF
+C192 carry_2 P0 0.2fF
+C193 or_gate_0/A P0 0.3fF
+C194 and_gate_7/A xor_gate_0/inverter_3/INP 0.1fF
+C195 xor_gate_6/inverter_1/w_0_0# and_gate_6/A 0.1fF
+C196 xor_gate_6/inverter_2/w_0_0# vdd 0.1fF
+C197 P2_P1-G0 or_four_0/B 0.1fF
+C198 xor_gate_1/inverter_3/INP xor_gate_1/XOR_out 0.1fF
+C199 xor_gate_5/inverter_3/INP xor_gate_5/XOR_out 0.1fF
+C200 xor_gate_7/XOR_out carry_3 0.1fF
+C201 xor_gate_4/inverter_2/w_0_0# xor_gate_4/inverter_3/INP 0.1fF
+C202 vdd xor_gate_0/A_bar 0.1fF
+C203 xor_gate_2/inverter_3/INP vdd 0.1fF
+C204 P0 and_five_0/a_101_8# 0.0fF
+C205 vdd xor_gate_7/inverter_0/w_0_0# 0.0fF
+C206 or_gate_0/w_69_34# vdd 0.1fF
+C207 w_140_n417# xor_gate_3/XOR_out 0.1fF
+C208 and_three_0/w_70_38# and_three_0/NAND_three_out 0.1fF
+C209 xor_gate_7/inverter_3/INP vdd 0.1fF
+C210 xor_gate_5/A_bar P1 0.1fF
+C211 and_gate_2/Out vdd 0.2fF
+C212 or_three_0/w_95_38# or_three_0/A 0.1fF
+C213 vdd or_five_0/w_87_38# 0.1fF
+C214 xor_gate_1/inverter_1/w_0_0# xor_gate_1/B_bar 0.0fF
+C215 and_gate_7/Out gnd 0.1fF
+C216 and_gate_5/w_0_0# vdd 0.1fF
+C217 carry_3 carry_0 0.1fF
+C218 and_five_0/inverter_0/INP and_gate_6/A 0.1fF
+C219 and_gate_6/Out and_gate_6/A 0.0fF
+C220 xor_gate_0/inverter_2/w_0_0# or_five_0/B 0.0fF
+C221 and_three_0/w_70_38# P1 0.1fF
+C222 and_gate_4/Out gnd 0.1fF
+C223 or_five_0/nor_five_output or_five_0/D 0.1fF
+C224 and_five_0/inverter_0/INP P0 0.2fF
+C225 xor_gate_4/B_bar vdd 0.2fF
+C226 and_four_1/nand_three_out or_five_0/D 0.1fF
+C227 S2 gnd 0.0fF
+C228 or_four_0/B or_three_0/A 0.1fF
+C229 vdd and_four_1/w_80_38# 0.2fF
+C230 carry_3 xor_gate_7/A_bar 0.1fF
+C231 and_gate_6/A and_three_2/a_83_8# 0.0fF
+C232 vdd and_three_2/w_70_38# 0.1fF
+C233 xor_gate_5/B_bar gnd 0.0fF
+C234 S0 vdd 0.1fF
+C235 vdd or_five_0/E 1.3fF
+C236 and_three_1/w_70_38# and_gate_6/A 0.1fF
+C237 and_gate_6/a_13_n26# or_three_0/A 0.0fF
+C238 and_gate_7/Out or_five_0/B 0.1fF
+C239 or_five_0/w_87_38# carry_4 0.0fF
+C240 or_four_0/w_87_38# P2_P1-G0 0.1fF
+C241 xor_gate_4/inverter_0/w_0_0# carry_0 0.1fF
+C242 xor_gate_2/inverter_3/INP xor_gate_2/XOR_out 0.1fF
+C243 or_five_0/A and_gate_0/w_0_0# 0.0fF
+C244 xor_gate_1/inverter_1/w_0_0# vdd 0.0fF
+C245 and_gate_5/Out vdd 0.2fF
+C246 gnd xor_gate_0/A_bar 0.0fF
+C247 xor_gate_0/inverter_1/w_0_0# xor_gate_0/B_bar 0.0fF
+C248 xor_gate_2/inverter_3/INP gnd 0.1fF
+C249 and_three_2/NAND_three_out and_three_2/w_70_38# 0.1fF
+C250 xor_gate_0/inverter_2/w_0_0# xor_gate_0/XOR_out 0.1fF
+C251 and_gate_6/A carry_0 0.1fF
+C252 or_five_0/A and_gate_0/Out 0.1fF
+C253 xor_gate_7/inverter_3/INP gnd 0.1fF
+C254 and_gate_2/Out gnd 0.1fF
+C255 vdd xor_gate_0/B_bar 0.2fF
+C256 or_five_0/C or_five_0/a_108_44# 0.0fF
+C257 P0 carry_0 1.4fF
+C258 xor_gate_6/inverter_0/w_0_0# xor_gate_6/A_bar 0.0fF
+C259 xor_gate_5/B_bar P1 0.5fF
+C260 xor_gate_6/inverter_0/w_0_0# vdd 0.0fF
+C261 and_gate_4/w_0_0# vdd 0.1fF
+C262 and_four_0/nand_three_out or_four_0/D 0.1fF
+C263 and_three_1/NAND_three_out vdd 0.3fF
+C264 xor_gate_4/B_bar gnd 0.0fF
+C265 or_gate_0/or_out carry_1 0.1fF
+C266 vdd and_gate_0/w_0_0# 0.1fF
+C267 xor_gate_4/inverter_0/w_0_0# xor_gate_4/A_bar 0.0fF
+C268 and_three_0/a_91_8# carry_0 0.0fF
+C269 xor_gate_0/inverter_2/w_0_0# or_five_0/D 0.0fF
+C270 xor_gate_2/inverter_3/INP P1 0.1fF
+C271 S0 gnd 0.0fF
+C272 or_five_0/w_87_38# or_five_0/B 0.1fF
+C273 and_five_0/w_80_38# and_gate_6/A 0.1fF
+C274 gnd or_five_0/E 0.0fF
+C275 carry_2 carry_0 0.2fF
+C276 vdd and_gate_0/Out 0.2fF
+C277 xor_gate_4/inverter_1/w_0_0# xor_gate_4/B_bar 0.0fF
+C278 and_five_0/w_80_38# P0 0.1fF
+C279 and_gate_7/A xor_gate_7/A_bar 0.1fF
+C280 and_gate_7/A and_gate_7/a_13_n26# 0.0fF
+C281 or_four_0/w_87_38# or_four_0/B 0.1fF
+C282 and_four_0/nand_three_out P0 0.1fF
+C283 and_gate_5/Out gnd 0.1fF
+C284 and_gate_5/w_0_0# P1 0.1fF
+C285 or_five_0/w_87_38# or_five_0/nor_five_output 0.1fF
+C286 xor_gate_0/XOR_out xor_gate_0/A_bar 0.0fF
+C287 xor_gate_7/inverter_1/w_0_0# xor_gate_7/B_bar 0.0fF
+C288 and_gate_3/w_0_0# and_gate_3/Out 0.1fF
+C289 xor_gate_4/XOR_out carry_0 0.1fF
+C290 xor_gate_4/A_bar P0 0.1fF
+C291 xor_gate_5/B_bar xor_gate_5/A_bar 0.1fF
+C292 xor_gate_4/inverter_2/w_0_0# S0 0.0fF
+C293 xor_gate_7/inverter_2/w_0_0# xor_gate_7/XOR_out 0.1fF
+C294 P0 and_five_0/a_109_8# 0.0fF
+C295 gnd xor_gate_0/B_bar 0.0fF
+C296 and_five_0/w_80_38# and_gate_7/A 0.1fF
+C297 vdd carry_3 0.1fF
+C298 xor_gate_2/inverter_0/w_0_0# vdd 0.0fF
+C299 and_gate_7/w_0_0# or_four_0/A 0.1fF
+C300 and_gate_3/Out vdd 0.2fF
+C301 carry_1 P0 0.2fF
+C302 xor_gate_7/inverter_3/INP S3 0.1fF
+C303 P1 and_four_1/w_80_38# 0.1fF
+C304 vdd xor_gate_7/inverter_1/w_0_0# 0.0fF
+C305 xor_gate_3/B_bar xor_gate_3/A_bar 0.1fF
+C306 and_gate_2/Out or_three_0/A 0.1fF
+C307 or_five_0/nor_five_output or_five_0/E 0.2fF
+C308 and_four_1/nand_three_out and_four_1/w_80_38# 0.1fF
+C309 and_five_0/inverter_0/INP carry_0 0.3fF
+C310 P1_G0 P0_P1_C0 0.1fF
+C311 and_three_1/NAND_three_out gnd 0.1fF
+C312 vdd and_gate_7/w_0_0# 0.1fF
+C313 and_gate_5/Out P1 0.0fF
+C314 xor_gate_4/inverter_0/w_0_0# vdd 0.0fF
+C315 or_four_0/D vdd 0.2fF
+C316 xor_gate_6/XOR_out carry_2 0.1fF
+C317 or_gate_0/A carry_1 0.0fF
+C318 gnd and_gate_0/Out 0.1fF
+C319 and_gate_2/w_0_0# vdd 0.1fF
+C320 xor_gate_6/A_bar and_gate_6/A 0.1fF
+C321 and_three_1/NAND_three_out P2_P1-G0 0.1fF
+C322 and_three_2/w_70_38# or_three_0/A 0.1fF
+C323 xor_gate_4/XOR_out xor_gate_4/A_bar 0.0fF
+C324 or_four_0/A or_five_0/C 0.0fF
+C325 or_four_0/inverter_0/INP vdd 0.1fF
+C326 or_five_0/w_87_38# or_five_0/D 0.1fF
+C327 vdd and_gate_6/A 2.4fF
+C328 xor_gate_5/XOR_out carry_1 0.1fF
+C329 xor_gate_3/inverter_3/INP P0 0.1fF
+C330 P0_P1_C0 carry_2 1.9fF
+C331 xor_gate_1/inverter_2/w_0_0# vdd 0.1fF
+C332 xor_gate_5/inverter_3/INP vdd 0.1fF
+C333 and_three_0/a_83_8# P1 0.0fF
+C334 and_five_0/w_80_38# and_five_0/inverter_0/INP 0.2fF
+C335 xor_gate_7/XOR_out xor_gate_7/A_bar 0.0fF
+C336 and_gate_7/A xor_gate_7/B_bar 0.5fF
+C337 P1_G0 vdd 1.6fF
+C338 vdd P0 0.4fF
+C339 and_gate_7/A or_four_0/A 0.2fF
+C340 vdd or_five_0/C 0.3fF
+C341 carry_3 gnd 0.3fF
+C342 and_three_1/NAND_three_out P1 0.1fF
+C343 xor_gate_6/inverter_3/INP xor_gate_6/XOR_out 0.1fF
+C344 xor_gate_5/inverter_0/w_0_0# carry_1 0.1fF
+C345 xor_gate_4/inverter_3/INP S0 0.1fF
+C346 xor_gate_3/inverter_1/w_0_0# xor_gate_3/B_bar 0.0fF
+C347 P0 and_five_0/a_117_8# 0.0fF
+C348 and_gate_1/w_0_0# or_four_0/A 0.0fF
+C349 xor_gate_0/XOR_out xor_gate_0/B_bar 0.1fF
+C350 and_gate_3/Out gnd 0.1fF
+C351 vdd xor_gate_0/inverter_3/INP 0.1fF
+C352 and_gate_6/A and_three_2/NAND_three_out 0.1fF
+C353 and_four_1/w_80_38# or_five_0/D 0.0fF
+C354 xor_gate_1/B_bar xor_gate_1/A_bar 0.1fF
+C355 xor_gate_6/inverter_2/w_0_0# S2 0.0fF
+C356 or_five_0/D or_five_0/E 1.0fF
+C357 vdd and_gate_7/A 1.3fF
+C358 or_gate_0/or_out gnd 0.2fF
+C359 carry_2 xor_gate_6/A_bar 0.1fF
+C360 P2_P1-G0 carry_3 0.1fF
+C361 and_three_2/NAND_three_out or_five_0/C 0.1fF
+C362 and_gate_1/w_0_0# vdd 0.1fF
+C363 or_gate_0/A vdd 0.2fF
+C364 carry_2 vdd 0.1fF
+C365 and_gate_6/w_0_0# and_gate_6/A 0.1fF
+C366 or_four_0/D gnd 0.0fF
+C367 or_three_0/NOR_three_out P1_G0 0.1fF
+C368 xor_gate_6/inverter_1/w_0_0# vdd 0.0fF
+C369 and_gate_7/A and_three_2/NAND_three_out 0.0fF
+C370 carry_3 P1 0.1fF
+C371 and_five_0/w_80_38# carry_0 0.1fF
+C372 xor_gate_2/inverter_0/w_0_0# xor_gate_2/A_bar 0.0fF
+C373 and_four_0/nand_three_out carry_0 0.2fF
+C374 or_four_0/inverter_0/INP gnd 0.4fF
+C375 and_gate_1/Out and_gate_1/w_0_0# 0.1fF
+C376 and_gate_6/A gnd 0.5fF
+C377 and_gate_7/w_0_0# or_five_0/B 0.1fF
+C378 and_four_0/w_80_38# or_four_0/D 0.0fF
+C379 xor_gate_1/A_bar vdd 0.1fF
+C380 xor_gate_5/inverter_0/w_0_0# vdd 0.0fF
+C381 xor_gate_5/inverter_3/INP gnd 0.1fF
+C382 or_four_0/D P2_P1-G0 0.7fF
+C383 xor_gate_6/B_bar and_gate_6/A 0.5fF
+C384 xor_gate_4/A_bar carry_0 0.1fF
+C385 xor_gate_6/inverter_3/INP vdd 0.1fF
+C386 and_four_0/a_101_8# P0 0.0fF
+C387 P1_G0 gnd 0.0fF
+C388 P0 gnd 0.7fF
+C389 gnd or_five_0/C 0.0fF
+C390 and_four_0/w_80_38# and_gate_6/A 0.1fF
+C391 or_three_0/NOR_three_out carry_2 0.1fF
+C392 or_four_0/inverter_0/INP P2_P1-G0 0.1fF
+C393 carry_1 carry_0 0.3fF
+C394 P2_P1-G0 and_gate_6/A 0.3fF
+C395 xor_gate_0/inverter_3/INP gnd 0.1fF
+C396 xor_gate_5/inverter_3/INP S1 0.1fF
+C397 vdd and_five_0/inverter_0/INP 0.6fF
+C398 xor_gate_7/XOR_out xor_gate_7/B_bar 0.1fF
+C399 carry_3 or_three_0/A 0.1fF
+C400 and_four_0/w_80_38# P0 0.1fF
+C401 xor_gate_4/inverter_1/w_0_0# P0 0.1fF
+C402 or_four_0/D P1 0.2fF
+C403 xor_gate_1/inverter_3/INP and_gate_6/A 0.1fF
+C404 and_gate_7/A gnd 0.1fF
+C405 and_gate_6/Out vdd 0.2fF
+C406 xor_gate_7/inverter_2/w_0_0# vdd 0.1fF
+C407 and_three_0/NAND_three_out P0 0.1fF
+C408 P1_G0 or_three_0/a_108_44# 0.0fF
+C409 xor_gate_1/inverter_2/w_0_0# xor_gate_1/inverter_3/INP 0.1fF
+C410 xor_gate_5/inverter_3/INP xor_gate_5/inverter_2/w_0_0# 0.1fF
+C411 xor_gate_2/inverter_1/w_0_0# vdd 0.0fF
+C412 xor_gate_3/A_bar vdd 0.1fF
+C413 or_four_0/B carry_3 0.0fF
+C414 carry_2 gnd 0.2fF
+C415 or_gate_0/A gnd 0.0fF
+C416 or_five_0/C or_five_0/B 0.5fF
+C417 P1 and_gate_6/A 1.0fF
+C418 xor_gate_0/inverter_3/INP or_five_0/B 0.0fF
+C419 and_three_1/w_70_38# vdd 0.1fF
+C420 xor_gate_3/B_bar vdd 0.2fF
+C421 P1_G0 P1 0.1fF
+C422 and_four_1/nand_three_out and_gate_6/A 0.1fF
+C423 P1 P0 1.1fF
+C424 xor_gate_5/XOR_out gnd 0.0fF
+C425 and_gate_7/A or_five_0/B 0.0fF
+C426 xor_gate_6/inverter_1/w_0_0# xor_gate_6/B_bar 0.0fF
+C427 and_gate_4/Out and_gate_4/w_0_0# 0.1fF
+C428 or_four_0/D or_three_0/A 0.1fF
+C429 xor_gate_4/XOR_out gnd 0.0fF
+C430 or_five_0/nor_five_output or_five_0/C 0.1fF
+C431 or_five_0/w_87_38# or_five_0/E 0.1fF
+C432 and_gate_2/w_0_0# or_three_0/A 0.0fF
+C433 xor_gate_1/A_bar gnd 0.0fF
+C434 xor_gate_6/inverter_3/INP gnd 0.1fF
+C435 vdd carry_0 0.8fF
+C436 and_gate_7/A P1 0.0fF
+C437 xor_gate_0/B_bar xor_gate_0/A_bar 0.1fF
+C438 xor_gate_7/B_bar xor_gate_7/A_bar 0.1fF
+C439 and_gate_6/Out and_gate_6/w_0_0# 0.1fF
+C440 or_three_0/w_95_38# P1_G0 0.1fF
+C441 or_four_0/D or_four_0/B 0.0fF
+C442 and_gate_6/A or_three_0/A 0.7fF
+C443 and_gate_5/Out and_gate_5/w_0_0# 0.1fF
+C444 and_three_0/a_91_8# P1 0.0fF
+C445 and_gate_7/w_0_0# or_five_0/D 0.0fF
+C446 xor_gate_5/inverter_2/w_0_0# xor_gate_5/XOR_out 0.1fF
+C447 xor_gate_5/inverter_1/w_0_0# vdd 0.0fF
+C448 carry_2 P1 0.0fF
+C449 P1_G0 or_three_0/A 0.1fF
+C450 w_140_n417# P0 0.0fF
+C451 and_five_0/inverter_0/INP gnd 0.1fF
+C452 or_four_0/inverter_0/INP or_four_0/B 0.1fF
+C453 xor_gate_4/inverter_2/w_0_0# xor_gate_4/XOR_out 0.1fF
+C454 or_four_0/B and_gate_6/A 0.0fF
+C455 or_three_0/A or_five_0/C 0.0fF
+C456 xor_gate_0/inverter_3/INP xor_gate_0/XOR_out 0.1fF
+C457 or_five_0/B or_five_0/a_100_44# 0.0fF
+C458 xor_gate_1/inverter_2/w_0_0# xor_gate_1/XOR_out 0.1fF
+C459 vdd xor_gate_7/A_bar 0.1fF
+C460 and_gate_6/Out gnd 0.1fF
+C461 xor_gate_3/inverter_1/w_0_0# vdd 0.0fF
+C462 and_gate_6/a_13_n26# and_gate_6/A 0.0fF
+C463 vdd xor_gate_0/inverter_0/w_0_0# 0.0fF
+C464 xor_gate_3/A_bar gnd 0.0fF
+C465 P1 and_four_1/a_101_8# 0.0fF
+C466 and_gate_7/A or_three_0/A 0.0fF
+C467 or_three_0/w_95_38# carry_2 0.0fF
+C468 or_four_0/w_87_38# carry_3 0.0fF
+C469 xor_gate_7/XOR_out gnd 0.0fF
+C470 xor_gate_5/inverter_0/w_0_0# P1 0.0fF
+C471 vdd and_five_0/w_80_38# 0.2fF
+C472 xor_gate_3/B_bar gnd 0.0fF
+C473 and_four_0/nand_three_out vdd 0.5fF
+C474 and_gate_7/Out and_gate_7/w_0_0# 0.1fF
+C475 and_three_0/w_70_38# P0 0.1fF
+C476 or_five_0/C or_five_0/D 0.4fF
+C477 xor_gate_4/A_bar vdd 0.1fF
+C478 xor_gate_6/XOR_out xor_gate_6/A_bar 0.0fF
+C479 and_five_0/inverter_0/INP P1 0.1fF
+C480 and_three_1/w_70_38# P2_P1-G0 0.0fF
+C481 and_gate_7/A or_five_0/D 0.5fF
+C482 carry_0 gnd 2.1fF
+C483 xor_gate_0/inverter_2/w_0_0# or_five_0/C 0.0fF
+C484 or_four_0/w_87_38# or_four_0/D 0.1fF
+C485 carry_1 vdd 0.1fF
+C486 xor_gate_7/inverter_0/w_0_0# carry_3 0.1fF
+C487 xor_gate_5/XOR_out xor_gate_5/A_bar 0.0fF
+C488 xor_gate_0/inverter_2/w_0_0# xor_gate_0/inverter_3/INP 0.1fF
+C489 vdd or_five_0/A 0.1fF
+C490 xor_gate_1/B_bar vdd 0.2fF
+C491 xor_gate_2/inverter_1/w_0_0# xor_gate_2/B_bar 0.0fF
+C492 P0_P1_C0 vdd 0.2fF
+C493 and_gate_7/A xor_gate_0/inverter_2/w_0_0# 0.0fF
+C494 or_four_0/w_87_38# or_four_0/inverter_0/INP 0.1fF
+C495 xor_gate_1/XOR_out xor_gate_1/A_bar 0.0fF
+C496 and_four_0/w_80_38# carry_0 0.1fF
+C497 xor_gate_7/A_bar gnd 0.0fF
+C498 and_three_1/w_70_38# P1 0.1fF
+C499 xor_gate_5/inverter_0/w_0_0# xor_gate_5/A_bar 0.0fF
+C500 xor_gate_4/inverter_3/INP xor_gate_4/XOR_out 0.1fF
+C501 and_gate_7/Out or_five_0/C 0.0fF
+C502 and_three_0/NAND_three_out carry_0 0.2fF
+C503 or_gate_0/w_69_34# or_gate_0/or_out 0.1fF
+C504 xor_gate_3/XOR_out xor_gate_3/A_bar 0.0fF
+C505 and_gate_4/Out P0 0.0fF
+C506 xor_gate_7/inverter_2/w_0_0# S3 0.0fF
+C507 and_gate_6/Out or_three_0/A 0.2fF
+C508 xor_gate_2/inverter_2/w_0_0# vdd 0.1fF
+C509 xor_gate_3/XOR_out xor_gate_3/B_bar 0.1fF
+C510 and_gate_0/Out gnd 0.5fF
+C511 and_gate_0/w_0_0# gnd 1.3fF
+C512 or_five_0/E gnd 1.4fF
+C513 or_five_0/D gnd 1.5fF
+C514 or_five_0/C gnd 2.4fF
+C515 or_five_0/B gnd 2.2fF
+C516 or_five_0/A gnd 0.5fF
+C517 gnd gnd 21.4fF
+C518 carry_4 gnd 2.4fF
+C519 or_five_0/nor_five_output gnd 0.4fF
+C520 or_five_0/w_87_38# gnd 1.6fF
+C521 xor_gate_0/A_bar gnd 0.8fF
+C522 xor_gate_0/inverter_0/w_0_0# gnd 0.5fF
+C523 xor_gate_0/B_bar gnd 1.0fF
+C524 xor_gate_0/inverter_1/w_0_0# gnd 0.6fF
+C525 xor_gate_0/XOR_out gnd 0.4fF
+C526 xor_gate_0/inverter_3/INP gnd 0.3fF
+C527 xor_gate_0/inverter_2/w_0_0# gnd 1.0fF
+C528 or_four_0/A gnd 1.3fF
+C529 and_gate_7/Out gnd 0.3fF
+C530 and_gate_7/w_0_0# gnd 1.1fF
+C531 or_three_0/A gnd 2.7fF
+C532 and_three_2/NAND_three_out gnd 0.3fF
+C533 and_three_2/w_70_38# gnd 1.3fF
+C534 and_four_1/nand_three_out gnd 0.5fF
+C535 and_four_1/w_80_38# gnd 1.5fF
+C536 carry_0 gnd 17.7fF
+C537 P0 gnd 11.3fF
+C538 P1 gnd 5.7fF
+C539 and_gate_6/A gnd 6.7fF
+C540 and_five_0/inverter_0/INP gnd 0.3fF
+C541 and_five_0/w_80_38# gnd 1.6fF
+C542 xor_gate_7/A_bar gnd 0.7fF
+C543 carry_3 gnd 3.3fF
+C544 xor_gate_7/inverter_0/w_0_0# gnd 0.5fF
+C545 xor_gate_7/B_bar gnd 0.5fF
+C546 and_gate_7/A gnd 7.7fF
+C547 xor_gate_7/inverter_1/w_0_0# gnd 0.5fF
+C548 xor_gate_7/XOR_out gnd 0.3fF
+C549 S3 gnd 0.6fF
+C550 vdd gnd 16.3fF
+C551 xor_gate_7/inverter_3/INP gnd 0.3fF
+C552 xor_gate_7/inverter_2/w_0_0# gnd 1.0fF
+C553 and_gate_1/Out gnd 0.5fF
+C554 and_gate_1/w_0_0# gnd 1.3fF
+C555 or_four_0/D gnd 1.8fF
+C556 P2_P1-G0 gnd 1.3fF
+C557 or_four_0/B gnd 1.3fF
+C558 or_four_0/inverter_0/INP gnd 0.4fF
+C559 or_four_0/w_87_38# gnd 1.4fF
+C560 xor_gate_1/A_bar gnd 0.8fF
+C561 xor_gate_1/inverter_0/w_0_0# gnd 0.5fF
+C562 xor_gate_1/B_bar gnd 1.0fF
+C563 xor_gate_1/inverter_1/w_0_0# gnd 0.6fF
+C564 xor_gate_1/XOR_out gnd 0.4fF
+C565 xor_gate_1/inverter_3/INP gnd 0.3fF
+C566 xor_gate_1/inverter_2/w_0_0# gnd 1.0fF
+C567 and_gate_6/Out gnd 0.3fF
+C568 and_gate_6/w_0_0# gnd 1.1fF
+C569 and_three_1/a_91_8# gnd 0.0fF
+C570 and_three_1/NAND_three_out gnd 0.5fF
+C571 and_three_1/w_70_38# gnd 1.4fF
+C572 and_four_0/nand_three_out gnd 0.3fF
+C573 and_four_0/w_80_38# gnd 1.4fF
+C574 xor_gate_6/A_bar gnd 0.7fF
+C575 carry_2 gnd 3.4fF
+C576 xor_gate_6/inverter_0/w_0_0# gnd 0.5fF
+C577 xor_gate_6/B_bar gnd 0.5fF
+C578 xor_gate_6/inverter_1/w_0_0# gnd 0.5fF
+C579 xor_gate_6/XOR_out gnd 0.3fF
+C580 S2 gnd 0.6fF
+C581 xor_gate_6/inverter_3/INP gnd 0.3fF
+C582 xor_gate_6/inverter_2/w_0_0# gnd 1.0fF
+C583 and_gate_2/Out gnd 0.5fF
+C584 and_gate_2/w_0_0# gnd 1.3fF
+C585 P0_P1_C0 gnd 0.7fF
+C586 P1_G0 gnd 1.3fF
+C587 or_three_0/NOR_three_out gnd 0.3fF
+C588 or_three_0/w_95_38# gnd 1.3fF
+C589 xor_gate_2/A_bar gnd 0.8fF
+C590 xor_gate_2/inverter_0/w_0_0# gnd 0.5fF
+C591 xor_gate_2/B_bar gnd 1.0fF
+C592 xor_gate_2/inverter_1/w_0_0# gnd 0.6fF
+C593 xor_gate_2/XOR_out gnd 0.4fF
+C594 xor_gate_2/inverter_3/INP gnd 0.3fF
+C595 xor_gate_2/inverter_2/w_0_0# gnd 1.0fF
+C596 and_gate_5/Out gnd 0.5fF
+C597 and_gate_5/w_0_0# gnd 1.2fF
+C598 and_three_0/NAND_three_out gnd 0.3fF
+C599 and_three_0/w_70_38# gnd 1.3fF
+C600 xor_gate_5/A_bar gnd 0.7fF
+C601 carry_1 gnd 4.5fF
+C602 xor_gate_5/inverter_0/w_0_0# gnd 0.5fF
+C603 xor_gate_5/B_bar gnd 0.5fF
+C604 xor_gate_5/inverter_1/w_0_0# gnd 0.5fF
+C605 xor_gate_5/XOR_out gnd 0.3fF
+C606 S1 gnd 0.6fF
+C607 xor_gate_5/inverter_3/INP gnd 0.3fF
+C608 xor_gate_5/inverter_2/w_0_0# gnd 1.0fF
+C609 and_gate_3/Out gnd 0.6fF
+C610 and_gate_3/w_0_0# gnd 1.3fF
+C611 or_gate_0/or_out gnd 0.3fF
+C612 or_gate_0/w_69_34# gnd 1.2fF
+C613 xor_gate_3/A_bar gnd 0.8fF
+C614 xor_gate_3/inverter_0/w_0_0# gnd 0.5fF
+C615 xor_gate_3/B_bar gnd 1.0fF
+C616 xor_gate_3/inverter_1/w_0_0# gnd 0.6fF
+C617 xor_gate_3/XOR_out gnd 0.4fF
+C618 xor_gate_3/inverter_3/INP gnd 0.3fF
+C619 w_140_n417# gnd 1.0fF
+C620 or_gate_0/A gnd 2.7fF
+C621 and_gate_4/Out gnd 0.3fF
+C622 and_gate_4/w_0_0# gnd 1.1fF
+C623 xor_gate_4/A_bar gnd 0.7fF
+C624 xor_gate_4/inverter_0/w_0_0# gnd 0.5fF
+C625 xor_gate_4/B_bar gnd 0.5fF
+C626 xor_gate_4/inverter_1/w_0_0# gnd 0.5fF
+C627 xor_gate_4/XOR_out gnd 0.3fF
+C628 S0 gnd 0.6fF
+C629 xor_gate_4/inverter_3/INP gnd 0.3fF
+C630 xor_gate_4/inverter_2/w_0_0# gnd 1.0fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(A0) v(A1) v(A2) v(A3)
+plot v(B0) v(B1) v(B2) v(B3)
+plot v(carry_0)
+plot v(carry_1)
+plot v(carry_2)
+plot v(carry_3)
+plot v(carry_4)
+plot v(S0)
+plot v(S1)
+plot v(S2)
+plot v(S3)
+
+.endc
+
+.end

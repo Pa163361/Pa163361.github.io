@@ -1,0 +1,89 @@
+* SPICE3 file created from xor_gate.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.global gnd vdd
+
+Vdd vdd gnd 'SUPPLY'
+
+Vin_a A gnd 1.8
+Vin_b B gnd 0
+
+M1000 xor_output out_1 vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=160 ps=104
+M1001 xor_output out_1 gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=80 ps=72
+M1002 out_1 XOR_out vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1003 out_1 XOR_out gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1004 B_bar B vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1005 B_bar B gnd gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+M1006 A_bar A vdd vdd CMOSP w=8 l=2
++  ad=40 pd=26 as=0 ps=0
+M1007 A_bar A gnd gnd CMOSN w=4 l=2
++  ad=40 pd=36 as=0 ps=0
+M1008 XOR_out B A_bar gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=0 ps=0
+M1009 A B_bar XOR_out gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+
+C0 vdd xor_output 0.0fF
+C1 A_bar B 0.1fF
+C2 vdd vdd 0.0fF
+C3 A_bar XOR_out 0.0fF
+C4 gnd A 0.1fF
+C5 vdd xor_output 0.1fF
+C6 out_1 XOR_out 0.1fF
+C7 gnd B_bar 0.0fF
+C8 xor_output out_1 0.1fF
+C9 vdd B 0.1fF
+C10 gnd A_bar 0.0fF
+C11 vdd vdd 0.1fF
+C12 A_bar A 0.1fF
+C13 vdd B_bar 0.2fF
+C14 gnd out_1 0.1fF
+C15 vdd A 0.1fF
+C16 gnd B 0.0fF
+C17 A_bar B_bar 0.1fF
+C18 vdd out_1 0.1fF
+C19 gnd XOR_out 0.0fF
+C20 XOR_out A 0.1fF
+C21 vdd A_bar 0.1fF
+C22 B_bar B 0.5fF
+C23 vdd vdd 0.0fF
+C24 vdd out_1 0.1fF
+C25 vdd XOR_out 0.1fF
+C26 gnd xor_output 0.0fF
+C27 B_bar XOR_out 0.1fF
+C28 A_bar vdd 0.0fF
+C29 vdd B_bar 0.0fF
+C30 A_bar gnd 0.7fF
+C31 A gnd 1.6fF
+C32 vdd gnd 0.5fF
+C33 B_bar gnd 0.5fF
+C34 B gnd 1.0fF
+C35 vdd gnd 0.5fF
+C36 XOR_out gnd 0.3fF
+C37 gnd gnd 0.6fF
+C38 xor_output gnd 0.1fF
+C39 vdd gnd 0.5fF
+C40 out_1 gnd 0.3fF
+C41 vdd gnd 1.0fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(A)
+plot v(B)
+plot v(xor_output)
+
+.endc
+
+.end

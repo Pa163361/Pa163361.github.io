@@ -1,0 +1,45 @@
+* SPICE3 file created from and_two.ext - technology: scmos
+
+.option scale=0.09u
+.include TSMC_180nm.txt
+.param SUPPLY=1.8
+.param LAMBDA=0.09u
+.global gnd vdd
+
+Vol vdd gnd 'SUPPLY'
+
+Vin_a A gnd 1.8
+Vin_b B gnd 0
+
+M1000 Out A vdd vdd CMOSP w=8 l=2
++  ad=48 pd=28 as=80 ps=52
+M1001 Out B vdd vdd CMOSP w=8 l=2
++  ad=0 pd=0 as=0 ps=0
+M1002 C A gnd gnd CMOSN w=4 l=2
++  ad=24 pd=20 as=20 ps=18
+M1003 Out B C gnd CMOSN w=4 l=2
++  ad=20 pd=18 as=0 ps=0
+
+C0 vdd Out 0.0fF
+C1 gnd Out 0.1fF
+C2 vdd vdd 0.1fF
+C3 vdd Out 0.2fF
+C4 gnd gnd 0.1fF
+C5 Out gnd 0.4fF
+C6 vdd gnd 0.1fF
+C7 vdd gnd 0.8fF
+
+.tran 0.1n 200n
+
+.control
+
+run
+
+plot v(A)
+plot v(B)
+plot v(Out)
+
+
+.endc
+
+.end

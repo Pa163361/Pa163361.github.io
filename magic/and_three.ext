@@ -1,0 +1,40 @@
+timestamp 1619431598
+version 8.0
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use inverter inverter_0 1 0 110 0 1 34
+node "a_91_8#" 10 0 91 8 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_83_8#" 10 0 83 8 ndif 24 20 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "gnd" 9 155.798 76 8 ndc 20 18 0 0 0 0 0 0 0 0 0 0 0 0 192 104 0 0 0 0 0 0 0 0 0 0
+node "NAND_three_out" 56 135.714 83 44 pdif 20 18 88 54 0 0 0 0 0 0 0 0 0 0 328 172 0 0 0 0 0 0 0 0 0 0
+node "vdd" 47 98.64 76 44 pdc 0 0 88 54 0 0 0 0 0 0 0 0 0 0 272 144 0 0 0 0 0 0 0 0 0 0
+node "C" 216 257.694 96 26 pc 0 0 0 0 0 0 0 0 0 0 128 124 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "B" 193 222.834 85 27 pc 0 0 0 0 0 0 0 0 0 0 116 112 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "A" 216 257.694 74 33 pc 0 0 0 0 0 0 0 0 0 0 128 124 0 0 16 16 0 0 0 0 0 0 0 0 0 0
+node "w_70_38#" 1858 803.52 70 38 nw 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "A" "B" 89.8926
+cap "A" "vdd" 11.7823
+cap "B" "C" 111.343
+cap "A" "NAND_three_out" 6.873
+cap "B" "NAND_three_out" 109.562
+cap "w_70_38#" "A" 64.77
+cap "C" "NAND_three_out" 181.482
+cap "w_70_38#" "B" 64.77
+cap "vdd" "NAND_three_out" 343.65
+cap "w_70_38#" "C" 64.77
+cap "w_70_38#" "vdd" 87.3072
+cap "NAND_three_out" "gnd" 82.476
+cap "w_70_38#" "NAND_three_out" 70.8408
+fet nfet 97 8 98 9 8 12 "Gnd!" "C" 4 0 "a_91_8#" 4 0 "NAND_three_out" 4 0
+fet nfet 89 8 90 9 8 12 "Gnd!" "B" 4 0 "a_83_8#" 4 0 "a_91_8#" 4 0
+fet nfet 81 8 82 9 8 12 "Gnd!" "A" 4 0 "gnd" 4 0 "a_83_8#" 4 0
+fet pfet 97 44 98 45 16 20 "w_70_38#" "C" 4 0 "vdd" 8 0 "NAND_three_out" 8 0
+fet pfet 89 44 90 45 16 20 "w_70_38#" "B" 4 0 "NAND_three_out" 8 0 "vdd" 8 0
+fet pfet 81 44 82 45 16 20 "w_70_38#" "A" 4 0 "vdd" 8 0 "NAND_three_out" 8 0
+cap "vdd" "inverter_0/w_0_0#" 3.55271e-15
+merge "inverter_0/INP" "NAND_three_out" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/gnd" "gnd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/w_0_0#" "w_70_38#" -1.13687e-13 0 0 0 0 0 -32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter_0/vdd" "vdd" -8.016 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8 0 0 0 0 0 0 0 0 0 0
