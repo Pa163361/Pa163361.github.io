@@ -1,0 +1,629 @@
+BufferManager::BufferManager
+ParseQuery::clear
+
+Reading New Command: 
+LOAD TEMP
+doCommand
+syntacticParse
+syntacticParseLOAD
+semanticParse
+semanticParseLOAD_TABLE
+TableCatalogue::isTable
+ParseQuery::clear
+
+Reading New Command: 
+LOAD temp
+doCommand
+syntacticParse
+syntacticParseLOAD
+semanticParse
+semanticParseLOAD_TABLE
+TableCatalogue::isTable
+executeLOAD_TABLE
+Table::Table
+Table::load
+Table::extractColumnNames
+Table::blockify
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command: 
+T1 <- GROUP BY A FROM temp RETURN MAX(C)
+doCommand
+syntacticParse
+syntacticParseGROUP
+semanticParse
+semanticParseGROUP
+TableCatalogue::isTable
+TableCatalogue::isTable
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+executeGROUP
+TableCatalogue::getTable
+Table::Table
+Table::printRow
+Table::printRow
+Table::getColumnIndex
+Table::getColumnIndex
+Table::getCursor
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Cursor::getNext
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Table::printRow
+Table::printRow
+Table::printRow
+Table::printRow
+Table::blockify
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command: 
+T2 <- GROUP BY A FROM temp RETURN MIN(C)
+doCommand
+syntacticParse
+syntacticParseGROUP
+semanticParse
+semanticParseGROUP
+TableCatalogue::isTable
+TableCatalogue::isTable
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+executeGROUP
+TableCatalogue::getTable
+Table::Table
+Table::printRow
+Table::printRow
+Table::getColumnIndex
+Table::getColumnIndex
+Table::getCursor
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Cursor::getNext
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Table::printRow
+Table::printRow
+Table::printRow
+Table::printRow
+Table::blockify
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command: 
+T3 <- GROUP BY A FROM temp RETURN SUM(C)
+doCommand
+syntacticParse
+syntacticParseGROUP
+semanticParse
+semanticParseGROUP
+TableCatalogue::isTable
+TableCatalogue::isTable
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+executeGROUP
+TableCatalogue::getTable
+Table::Table
+Table::printRow
+Table::printRow
+Table::getColumnIndex
+Table::getColumnIndex
+Table::getCursor
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Cursor::getNext
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Table::printRow
+Table::printRow
+Table::printRow
+Table::printRow
+Table::blockify
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command: 
+T4 <- GROUP BY A FROM temp RETURN AVG(C)
+doCommand
+syntacticParse
+syntacticParseGROUP
+semanticParse
+semanticParseGROUP
+TableCatalogue::isTable
+TableCatalogue::isTable
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+TableCatalogue::isColumnFromTable
+TableCatalogue::isTable
+TableCatalogue::getTable
+Table::isColumn
+executeGROUP
+TableCatalogue::getTable
+Table::Table
+Table::printRow
+Table::printRow
+Table::getColumnIndex
+Table::getColumnIndex
+Table::getCursor
+Cursor::Cursor
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Cursor::getNext
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Cursor::nextPage
+BufferManager::getPage
+BufferManager::inPool
+BufferManager::insertIntoPool
+Page::Page
+Printing table
+TableCatalogue::getTable
+Page::getRow
+Cursor::getNext
+Page::getRow
+TableCatalogue::getTable
+Table::getNext
+Table::printRow
+Table::printRow
+Table::printRow
+Table::printRow
+Table::blockify
+BufferManager::writePage::Table
+Page::Page
+Page::writePage::Table
+TableCatalogue::~insertTable
+ParseQuery::clear
+
+Reading New Command: 
+QUIT
+Coming to quit
+
+MatrixCatalogue::~MatrixCatalogue
+TableCatalogue::~TableCatalogue
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
+BufferManager::deleteFile: Success
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
+BufferManager::deleteFile: Success
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
+BufferManager::deleteFile: Success
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
+BufferManager::deleteFile: Success
+Table::~unload
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+BufferManager::deleteFile
+BufferManager::deleteFile: Success
+Table::isPermanent
